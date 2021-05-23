@@ -1,0 +1,23 @@
+/*主表浮动及组件样式*/
+.div-mcmain{
+    position: relative;
+    top: 15px;
+    left: 30px;
+    -webkit-box-shadow: #e6e7e9 0px 0px 10px;
+    -moz-box-shadow: #e6e7e9 0px 0px 10px;
+    box-shadow: #e6e7e9 0px 0px 10px;
+}
+.div-select{
+    position: relative;
+    top: 15px;
+    left: 30px;
+}
+.div-select select{
+    border: 0;
+    color: #949598;
+    background-color: #F5F5F5;
+    font:12px 思源雅黑;
+}
+table tr td{
+  font:12px 思源雅黑;
+}

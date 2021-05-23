@@ -1,0 +1,60 @@
+
+serviceUrl = '<?php $_SERVER['HTTP_HOST']?>/weixin/jianyanconfirm/controller/index.php'
+
+
+生产过程检验入口页面
+
+
+产线列表接口
+
+传入参数json格式 { "action" : "productionLine" }
+传入参数字段含义 
+action : 功能参数，值为 productionLine
+
+返回参数json格式 
+{
+	"status" : "" , 
+	"msg" : "" ,
+	"result" :  [ 
+				    { "id" : 产线id , "name" : "产线名称" } , 
+					... 
+				]
+}
+返回参数含义
+status : 状态，1是成功 ，0是失败
+msg:状态消息
+result : 返回结果数据
+id : 产线id
+name : 产线名称
+	
+
+确定接口(检查记录编号存在情况)
+
+传入参数json格式 
+{
+	"action" : "confirm" , 
+	"recordNumber" : 记录编号 , 
+	"product" : "产品名称" , 
+	"productionLine" : "产线id" 
+}
+
+返回参数json格式 
+{
+	"status" : "" , 
+	"msg" : "" ,
+	"result" : 	{ 
+					"exsit" : "记录编号存在状态 ， 值为0是不存在，值为1是存在" ,
+					"id" : 记录编号id
+				} , 
+}
+
+
+点击确定或者记录编号存在时查看跳转到生产过程检验主页面时 ，带一个参数 ?id=
+参数含义
+id :  记录编号id
+
+
+
+
+
+

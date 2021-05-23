@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<INVOICE>
+  <Product>
+    <Ln.>1</Ln.>
+    <PO>C2018_005-3-20</PO>
+    <ProductCode>3-20-YWQ-C-1R-1248</ProductCode>
+    <Description></Description>
+    <Qty>1</Qty>
+    <UnitPrice>0.000</UnitPrice>
+    <Amount>0.00</Amount>
+  </Product>
+  <Product>
+    <Ln.>2</Ln.>
+    <PO>C2018_005-3-20</PO>
+    <ProductCode>3-20-YWQ-A-1aR-1168</ProductCode>
+    <Description></Description>
+    <Qty>1</Qty>
+    <UnitPrice>0.000</UnitPrice>
+    <Amount>0.00</Amount>
+  </Product>
+  <Product>
+    <Ln.>3</Ln.>
+    <PO>C2018_005-3-20</PO>
+    <ProductCode>3-20-YTQ-C-2R-1608</ProductCode>
+    <Description></Description>
+    <Qty>1</Qty>
+    <UnitPrice>0.000</UnitPrice>
+    <Amount>0.00</Amount>
+  </Product>
+</INVOICE>

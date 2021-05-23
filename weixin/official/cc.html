@@ -1,0 +1,51 @@
+<html class="hb-loaded">
+<head>
+    <meta charset="UTF-8">
+    <title>仓储项目管理</title>
+    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" name="viewport">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-1.12.4.min.js"></script>
+</head>
+<body huaban_collector_injected="true">
+    <section class="aui-scrollView">
+        <div class="aui-choice">
+            <p>仓储项目</p>
+        </div> 
+        <div class="aui-grids">
+            <a href="http://tz.matechstone.com/weixin/batchStoreConfirm/scan.php" class="aui-grids-item">
+                <div class="aui-grids-item-icon">
+                    <img src="images/rk.png" alt="">
+                </div>
+                <div class="aui-grids-item-text">入库登记</div>
+            </a>
+            <a href="http://tz.matechstone.com/weixin/chuhuoconfirm/view/out.php" class="aui-grids-item">
+                <div class="aui-grids-item-icon">
+                    <img src="images/ck.png" alt="">
+                </div>
+                <div class="aui-grids-item-text">出库登记</div>
+            </a>
+            <a href="http://tz.matechstone.com/weixin/wx_plan/view/Mobile/html/transportRecords.php" class="aui-grids-item">
+                <div class="aui-grids-item-icon">
+                    <img src="images/wl.png" alt="">
+                </div>
+                <div class="aui-grids-item-text">物流追踪</div>
+            </a>            
+            <a href="http://tz.matechstone.com/weixin/pandianconfirm/view/scan.php" class="aui-grids-item">
+                <div class="aui-grids-item-icon">
+                    <img src="images/pd.png" alt="">
+                </div>
+                <div class="aui-grids-item-text">库存盘点</div>
+            </a>
+        </div>
+    </section>
+</section>
+<script type="text/javascript">
+    $('img').error(function(){
+            $(this).attr('src', "images/default.png");
+         });
+</script>
+</body>
+</html>

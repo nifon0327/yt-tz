@@ -1,0 +1,171 @@
+#linediv_qc{
+    background-color: #308CC0;
+    width:125px;height: 125px;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+#headdiv_qc{
+     background-color: #E5F1F7; 
+     width:1080px;height: 200px;
+     /*margin-top:-20px;*/
+}
+
+#quantity3_qc{
+    width:650px;
+    float:right;
+    margin-top: 0px;
+    margin-right: 20px;
+}
+
+#quantity3_qc li{
+     display:block; float:right;
+     /*font-family: "PingFang_Regular";*/
+     font-size: 74pt;
+     color: #01be56;
+}
+
+#quantity3_qc span{
+     color: #22AC38;
+}
+
+#quantity3_qc div{
+    float: right;
+    display:block;
+    margin-top: 20px;
+    background-color: #999999;
+    width: 5px;
+    height: 60px;
+}
+
+#count_rk{
+    clear:both;float:left;
+    width: 1080px;height: 75px;
+    /* line-height: 135px;*/
+    text-align: left;
+    vertical-align: middle;
+    margin-top: -20px;
+    background-color: #D9EAF4;
+}
+
+#count_rk li{
+    display:block; float:left;
+    width: 538px;
+    line-height: 0px;
+    padding-top: 35px;
+    padding-left: 10px;
+    font-size: 28pt;
+    /*font-family: "PingFang_Regular";*/
+}
+
+#count_rk div{
+    float: right;
+    background-color: rgba(2,115,178,0.25);
+    width: 4px;
+    height: 71px;
+    margin-top: -35px;
+}
+
+.littleLi{
+    font-size: 24pt;
+    color: #848888;
+    margin-left:0px;
+    margin-right: 5px;
+}
+
+#state_qc{
+    width:300px;
+}
+
+#state_qc li{
+    height: 62px; 
+    display:block;
+}
+
+.state_span{
+    text-align: left;
+    font-size: 28pt;
+    padding-top: 18px;
+    padding-left: 10px;
+    position: absolute;
+}
+
+#leaveCount{
+    font-size:32px;
+    margin-top:10px;
+    color:#848888;
+}
+
+.state_img{
+    height: 50px;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+.week_qc div{
+   display:inline-block;
+   margin-left:2px; 
+   width: 30px;height: 45px;
+   line-height: 45px;
+   vertical-align: middle;
+   -webkit-transform: skew(-3deg);  
+   -moz-transform: skew(-3deg); 
+   -o-transform: skew(-3deg);
+   
+    font-family: "AshCloud8";
+    font-size: 30pt;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.week2_qc div{
+   display:inline-block;
+   margin-left:2px; 
+   width: 60px;height: 45px;
+   line-height: 45px;
+   vertical-align: middle;
+   -webkit-transform: skew(-3deg);  
+   -moz-transform: skew(-3deg); 
+   -o-transform: skew(-3deg);
+   
+    font-family: "AshCloud8";
+    font-size: 30pt;
+    text-align: center;
+    color: #FFFFFF;
+    background: #308CC0;
+}
+
+.title_qc{
+    font-size: 28pt;
+    /*font-family: "PingFang_Regular";*/
+}
+
+.static_qty{
+    font-size: 40pt;
+    /*font-family: "PingFang_Regular";*/
+}
+
+.time_qc{
+    padding-right: 10px;
+    padding-top: 3px;
+    font-size: 30pt;
+    /*font-family: "PingFang_Regular";*/
+}
+
+.time_qc img{
+   width: 45px;
+   height: 45px;
+}
+
+.time_qc div{
+    display:inline-block;
+    margin-left: 5px;
+    width: 45px;height: 45px;
+    line-height: 45px;
+    font-size: 25pt;
+    color: #FFFFFF;
+    text-align: center;
+    vertical-align: middle;
+    background: #308CC0;
+    border-radius:4px;
+}

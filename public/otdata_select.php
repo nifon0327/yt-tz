@@ -1,0 +1,168 @@
+<?php 
+//2011-2-15已更新
+//$DataPublic.otdata /$DataPublic.ottypedata
+//电信-joseph
+include "../model/modelhead.php";
+//步骤2：
+ChangeWtitle("$SubCompany 加工文档查询");			//需处理
+$nowWebPage =$funFrom."_select";	
+$toWebPage  ="temptb_model";
+$_SESSION["nowWebPage"]=$nowWebPage; 
+$Parameter="fromWebPage,$fromWebPage,funFrom,$funFrom,From,$From,Pagination,$Pagination,Page,$Page";
+$tableMenuS=500;
+$tableWidth=850;
+//步骤3：
+include "../model/subprogram/select_model_t.php";
+//步骤4：需处理
+$CheckTb="$DataPublic.otdata";
+?>
+<table border="0" width="<?php  echo $tableWidth?>" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
+	<tr>
+		<td class="A0011">
+			<TABLE width="600" border=0 align="center">
+              <TBODY>
+                <TR>
+                  <TD align="right">文档类别
+                    <input name="Field[]" type="hidden" id="Field[]" value="TypeId">
+                  </TD>
+                  <TD align="center">
+				    <select name="fun[]" id="fun[]" style="width: 60px;">
+			          <option value="=">=</option>
+		            </select>			        </TD>
+                  <TD>
+					  <select name=value[] id="value[]" style="width: 274px;">
+						<option selected  value="">全部</option>
+			<?php 
+			$ottype_Result = mysql_query("SELECT Id,Name FROM $DataPublic.ottypedata WHERE Estate=1 order by Letter",$link_id);
+			if($ottype_Row = mysql_fetch_array($ottype_Result)){
+				do{
+					$Id=$ottype_Row["Id"];
+					$Name=$ottype_Row["Name"];
+					echo"<option value='$Id'>$Name</option>";
+					}while ($ottype_Row = mysql_fetch_array($ottype_Result));
+				}
+			?>
+					  </select>
+					  <input name="table[]" type="hidden" id="table[]" value="E">
+                      <input name="types[]" type="hidden" id="types[]"
+                value="isNum" />
+</TD>
+                </TR>
+                <TR>
+                  <TD width="108" align="right">文档说明
+                    <input name="Field[]" type="hidden" id="Field[]" value="Name">
+                  </TD>
+                  <TD width="84" align="center">
+                    <SELECT name=fun[] id="fun[]" style="width: 60px;">
+                        <option value="LIKE" selected>包含</option>
+                        <OPTION value==>=</OPTION>
+                        <OPTION 
+          value=!=>!=</OPTION>
+                    </SELECT>                  </TD>
+                  <TD width="394"><INPUT name=value[] class=textfield id="value[]" size=48>
+                    <input name="table[]" type="hidden" id="table[]" value="E">
+                    <input name="types[]" type="hidden" id="types[]"
+                value="isStr" />
+</TD>
+                </TR>	
+                     <TR>
+                  <TD align="right">客户名称
+                    <input name="Field[]" type="hidden" id="Field[]" value="CompanyId">
+                  </TD>
+                  <TD align="center">
+				    <select name="fun[]" id="fun[]" style="width: 60px;">
+			          <option value="=">=</option>
+		            </select>			        </TD>
+                  <TD>
+					  <select name=value[] id="value[]" style="width: 274px;">
+						<option selected  value="">全部</option>
+			<?php 
+			$otkf_Result = mysql_query("SELECT Id,ListName,Company FROM $DataPublic.otdata_kfinfo WHERE 1",$link_id);
+			if($otkf_Row = mysql_fetch_array($otkf_Result)){
+				do{
+					$Id=$otkf_Row["Id"];
+					$ListName=$otkf_Row["ListName"];
+					$Company=$otkf_Row["Company"];
+					echo"<option value='$Id'>$ListName - $Company</option>";
+					}while ($otkf_Row = mysql_fetch_array($otkf_Result));
+				}
+			?>
+					  </select>
+					  <input name="table[]" type="hidden" id="table[]" value="E">
+                      <input name="types[]" type="hidden" id="types[]"
+                value="isNum" />
+</TD>
+                </TR>
+                
+       <TR>
+                  <TD align="right">更新日期
+                    <input name="Field[]" type="hidden" id="Field[]" value="Date">
+                  </TD>
+                  <TD align="center">
+                    <SELECT name=fun[] id="fun[]" style="width: 60px;">
+                        <OPTION value== 
+          selected>=</OPTION>
+                        <OPTION value=">">&gt;</OPTION>
+                        <OPTION 
+          value=">=">&gt;=</OPTION>
+                        <OPTION value="<">&lt;</OPTION>
+                        <OPTION 
+          value="<=">&lt;=</OPTION>
+                        <OPTION value=!=>!=</OPTION>
+                    </SELECT>                  </TD>
+                  <TD><INPUT name=value[] class=textfield id="value[]" size=18 onfocus="WdatePicker()" readonly>
+至
+  <INPUT name=DateArray[] class=textfield id="DateArray[]" size=18 onfocus="WdatePicker()" readonly>
+  <input name="table[]" type="hidden" id="table[]" value="E">
+  <input name="types[]" type="hidden" id="types[]" value="isDate">
+</TD>
+                </TR>
+                <TR>
+                  <TD align="right">操 作 员
+                    <input name="Field[]" type="hidden" id="Field[]" value="Operator">
+                  </TD>
+                  <TD align="center">
+                    <select name="fun[]" id="fun[]" style="width: 60px;">
+                      <option value="=" selected>=</option>
+                      <option value="!=">!=</option>
+                    </select>                  </TD>
+                  <TD>
+				  <select name=value[] id="value[]" style="width: 274px;">
+				  <option value="" selected>全部</option>
+					<?php 
+					include "../model/subprogram/select_model_stafflist.php";
+					?>		 
+				  </select>
+                  <input name="table[]" type="hidden" id="table[]" value="E">                  
+                  <input name="types[]" type="hidden" id="types[]"
+                value="isNum" />
+</TD>
+                </TR>
+                <TR>
+                  <TD align="right">锁定状态
+                    <input name="Field[]" type="hidden" id="Field[]" value="Locks">
+                  </TD>
+                  <TD align="center">
+				    <select name="fun[]" id="fun[]" style="width: 60px;">
+			          <option value="=">=</option>
+		            </select>			        </TD>
+                  <TD>
+					  <select name=value[] id="value[]" style="width: 274px;">
+						<option selected  value="">全部</option>
+						<option value="0">锁定</option>
+						<option value="1">未锁定</option>
+					  </select>
+					  <input name="table[]" type="hidden" id="table[]" value="E">
+                      <input name="types[]" type="hidden" id="types[]"
+                value="isNum" />
+</TD>
+                </TR>
+              </TBODY>
+	    </TABLE>
+		</td>
+	</tr>
+</table>
+<?php 
+//步骤5：
+include "../model/subprogram/select_model_b.php";
+?>

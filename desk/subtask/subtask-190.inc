@@ -1,0 +1,1 @@
+<?php   $OutputInfo.="、产品的理论净利分类统计(<span class='purpleB'>负净利143个</span>&nbsp;/&nbsp;<span class='redN'>0-7%净利426个</span>)<br>";?>

@@ -1,0 +1,47 @@
+改动
+1.----------searchInspectionRecord----------
+"action":"searchInspectionRecord",
+"workshopId":"101",
+"status":0,
+"tradeId":34
+
+生产中构件使用  Qty  字段来判断构件状态     null 表示待审核    大于0表示不合格   0表示合格  前段先做非空判断再用parseInt处理后再做判断
+
+返回数据样例
+[{"ProductId":"110","Forshort":"\u878d\u521b\u7389\u5170","EState":"2","modified":"2019-02-21 09:39:07","cName":"13-4-YBS-4L-1-110","RecordNo":"2019021601","ImageUrl":"","threadName":"PC-1","uName":"\u67f3\u579a","userId":"1120","Qty":"1.00"}],"msg":"\u6210\u529f"}
+
+成品逻辑和之前的一样  不需要修改
+
+2.----------searchProducts----------
+"action":"searchProducts",
+"workshopId":"101",
+"status":0,
+"tradeId":34,
+"inspectionRecordId":35
+
+{"status":0,"result":[{"Forshort":"\u878d\u521b\u7389\u5170","ProductId":"3","cName":"13-4-YBS-1L-1-3","CjtjId":"96259"}],"msg":"\u6210\u529f"}
+
+
+3.----------getProductByInspectionRecord----------
+
+"action":"getProductByInspectionRecord",
+"status":0,    //0生产过程中    1成品
+"inspectionRecordId":35    // 33也有数据
+生产中和成品都需要新增status字段
+
+[{"RecordNo":"2019021601","RecordName":"43242","WorkShopId":"101","WorkShopName":"PC-1","Creator":"柳垚","Created":"2019-02-17 15:48:10","ImageUrl":""},[{"Forshort":"融创玉兰","cName":"13-4-YBS-4L-1-110","ProductId":"110","productdataId":"66900","uName":"柳垚","InspectionProductId":"67","InspectionRecordId":"35","Estate":"1.00"},
+{"Forshort":"美的二期","cName":"15-5-PCB01L-1-124","ProductId":"71583","productdataId":"161773","uName":null,"InspectionProductId":"69","InspectionRecordId":"35","Estate":"0.00"},{"Forshort":"美的二期","cName":"3-2-PCB09L-186","ProductId":"66826","productdataId":"157016","uName":null,"InspectionProductId":"90","InspectionRecordId":"35","Estate":"0.00"},{"Forshort":"G71[11_13_14_15]","cName":"13-11-PCLT01-19","ProductId":"75918","productdataId":"186180","uName":null,"InspectionProductId":"91","InspectionRecordId":"35","Estate":"0.00"}]],"msg":"成功"}
+
+{"status":0,"result":[{"RecordNo":"2019021610","RecordName":"生产测试","WorkShopId":"101","WorkShopName":"PC-1","Creator":"柳垚","Created":"2019-02-17 15:48:10","ImageUrl":""},[{"Forshort":"融创玉兰","cName":"13-4-YBS-1L-1-3","ProductId":"3","productdataId":"66793","uName":"柳垚","InspectionProductId":"97","InspectionRecordId":"33","Estate":null}]],"msg":"成功"}
+
+4.----------inspectProduct----------
+生产中和成品新增上送字段  status
+
+5.----------insertInspectionRecord----------
+生产中和成品新增上送字段  status
+
+6.----------searchInspectionRecord----------
+
+生产中构件使用  Qty  字段来判断构件状态     null 表示待审核    大于0表示不合格   0表示合格  前段先做非空判断再用parseInt处理后再做判断
+
+成品逻辑不需要修改

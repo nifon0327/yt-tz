@@ -1,0 +1,45 @@
+<html class="hb-loaded">
+<head>
+    <meta charset="UTF-8">
+    <title>质检项目管理</title>
+    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" name="viewport">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-1.12.4.min.js"></script>
+</head>
+<body huaban_collector_injected="true">
+ <section class="aui-flexView">
+    <header class="aui-navBar aui-navBar-fixed">
+        <div class="aui-center">
+            <span class="aui-center-title">研砼治筑运营平台</span>
+        </div>
+    </header>
+    <section class="aui-scrollView">
+        <div class="aui-choice">
+            <p>质检项目</p>
+        </div> 
+        <div class="aui-grids">
+            <a href="http://tz.matechstone.com/weixin/inspectionconfirm/view/produce_entry.php" class="aui-grids-item">
+                <div class="aui-grids-item-icon">
+                    <img src="images/bzj.png" alt="">
+                </div>
+                <div class="aui-grids-item-text">半成品质检</div>
+            </a>
+            <a href="http://tz.matechstone.com/weixin/inspectionconfirm/view/finished_entry.php" class="aui-grids-item">
+                <div class="aui-grids-item-icon">
+                    <img src="images/zj.png" alt="">
+                </div>
+                <div class="aui-grids-item-text">成品质检</div>
+            </a>              
+        </div>
+    </section>
+</section>
+<script type="text/javascript">
+    $('img').error(function(){
+            $(this).attr('src', "images/default.png");
+         });
+</script>
+</body>
+</html>

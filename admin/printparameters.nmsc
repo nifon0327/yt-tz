@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ConnectionName</key>
+	<string>116.6.107.228</string>
+	<key>DatabaseName</key>
+	<string>ac</string>
+	<key>ObjectName</key>
+	<string>printparameters</string>
+	<key>SchemaName</key>
+	<string></string>
+	<key>Type</key>
+	<string>Table</string>
+</dict>
+</plist>

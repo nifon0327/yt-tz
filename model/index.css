@@ -1,0 +1,63 @@
+<!-- 二合一已更新 -->
+@charset "UTF-8";
+A:link {COLOR: #999999; TEXT-DECORATION: none}
+A:active {COLOR: #999999; TEXT-DECORATION: none}
+A:visited {COLOR: #999999; TEXT-DECORATION: none}
+A:hover {COLOR: #FF6633}
+BODY {
+	BACKGROUND-POSITION: center 50%;
+	SCROLLBAR-FACE-COLOR: #FFFFFF;
+	FONT-SIZE: 12px;
+	SCROLLBAR-HIGHLIGHT-COLOR: #666666;
+	SCROLLBAR-SHADOW-COLOR: #666666;
+	COLOR: #999999;
+	SCROLLBAR-3DLIGHT-COLOR: #FFFFFF;
+	SCROLLBAR-ARROW-COLOR: #CC0000;
+	SCROLLBAR-TRACK-COLOR: #FFFFFF;
+	FONT-FAMILY: "思源黑体";
+	SCROLLBAR-DARKSHADOW-COLOR: #FFFFFF;
+	border: thin none #000000;
+	margin-top: 8px;
+	margin-left: 8px;
+	background-color: #F5F5F5;
+	}
+.readlink{COLOR:#000000;FILTER: dropshadow(color=#ffffff,offx=1,offy=1);} 
+.A1111{	border: 1px solid #999999;}
+.A1101{BORDER-BOTTOM: 1px solid #999999;BORDER-top: 1px solid #999999;BORDER-LEFT:none;BORDER-RIGHT: 1px solid #999999;}
+.A0100{BORDER-BOTTOM: 1px solid #999999;BORDER-top: 0px none;BORDER-LEFT:0px none;BORDER-RIGHT: 0px none;}
+.A0111{BORDER-BOTTOM: 1px solid #999999;BORDER-top: 0px none;BORDER-LEFT:1px solid #999999;BORDER-RIGHT: 1px solid #999999;}
+.A0101{BORDER-BOTTOM: 1px solid #999999;BORDER-top: 0px none;BORDER-LEFT:0px none;BORDER-RIGHT: 1px solid #999999;}
+.A0011{BORDER-BOTTOM: none;BORDER-top: 0px none;BORDER-LEFT:1px solid #999999;BORDER-RIGHT: 1px solid #999999;}
+.A0010{BORDER-BOTTOM: none;BORDER-top: 0px none;BORDER-LEFT:1px solid #999999;BORDER-RIGHT: none;}
+.A0001{BORDER-BOTTOM: none;BORDER-top: 0px none;BORDER-LEFT:none;BORDER-RIGHT:1px solid #999999 ;}
+.A0110{BORDER-BOTTOM: 1px solid #999999;BORDER-top: 0px none;BORDER-LEFT:1px solid #999999;BORDER-RIGHT:none;}
+.A1100{BORDER-BOTTOM: 1px solid #999999;BORDER-top: 1px solid #999999;BORDER-LEFT:0px none;BORDER-RIGHT: 0px none;}
+
+.noLine {
+	background:transparent;
+	FONT-SIZE: 12px;
+	HEIGHT: 18px;
+	text-align: center;
+	border: none;
+	color: #000000;
+	}
+TD {
+	FONT-SIZE: 12px;
+	FONT-FAMILY: "思源黑体";
+	border-top: thin none #999999;
+	border-right: thin none #999999;
+	border-bottom: 1px none #000000;
+	border-left: thin none #999999;
+}
+.logozy{
+	FONT-SIZE: 27px;
+	FONT-FAMILY: "思源黑体";
+	color: #FF0000;
+	font-weight: bold;
+}
+.logomc{
+	FONT-SIZE: 15px;
+	FONT-FAMILY: "思源黑体";
+	color: #FF0000;
+}
+

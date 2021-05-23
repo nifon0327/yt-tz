@@ -1,0 +1,1 @@
+﻿<meta http-equiv="Refresh" content='0;url=../public/msg_bulletin_read.php'>

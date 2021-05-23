@@ -1,0 +1,46 @@
+.selection {
+    margin-right: 30px;
+}
+
+#specific th,td{
+    text-align: center;
+	border-width: 1px;
+	padding: 5px 8px;
+	border-style: solid;
+	border-color: #000;
+	min-width: 50px;
+}
+
+#specific {
+    width:90%;
+    margin:auto;
+}
+
+#specific th{
+    font-weight: 400;
+	background-color: #f9f9f9;
+}
+
+#infos {
+    font-weight: 500;
+}
+
+.bbtns {
+    margin-right: 30px;
+}
+
+.selection {
+    margin-right: 30px;
+}
+
+#sheader{
+    display: flex;
+    align-items: flex-start;
+    align-content: flex-start;
+}
+
+#sheader {
+    padding-top:20px;
+    width: 80%;
+    margin:auto;
+}

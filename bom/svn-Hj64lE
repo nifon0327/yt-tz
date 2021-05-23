@@ -1,0 +1,426 @@
+<?php
+include "../model/modelhead.php";
+$From=$From==""?"read":$From;
+//需处理参数
+$ColsNumber=13;
+//$tableMenuS=1490;
+ChangeWtitle("$SubCompany 项目列表-BOM");
+$funFrom="bom_object";
+$nowWebPage=$funFrom."_read";
+//$sumCols="4";		//求和列
+$Th_Col="选项|60|顺序号|50|项目编号|55|项目名称|100|构件总数量|80|BOM生成时间|70|BOM操作人|75|提交审核时间|70|审核负责人|75|审核状态|70| |75| |70| |70";
+$Pagination=$Pagination==""?1:$Pagination;  //分页标志 0-不分页 1-分页
+$Page_Size = 100; //每页数量
+$ActioToS="8,9"; //功能:0查询,1新增,2更新,3删除,4可用,5禁用,6锁定,7解锁,8全选,9反选,10列印,11统计,12其它,13请款,14退回,15取消
+
+//检索条件
+//时间选择
+if ($_POST["period"]) {
+    $period = $_POST["period"];
+}
+
+//审核状态
+if ($_POST["status"]) {
+    $status = $_POST["status"];
+}
+
+//项目名称
+if ($_POST["name"]) {
+    $name = $_POST["name"];
+}
+
+//项目初始数据生成
+$mySql="INSERT INTO $DataIn.bom_object (tradeid)( 
+        SELECT a.id FROM $DataIn.trade_object a 
+        inner join $DataIn.trade_info c on a.id = c.TradeId and c.Estate in (10, 11) WHERE a.ObjectSign = 2
+        AND NOT EXISTS ( SELECT b.tradeId FROM $DataIn.bom_object b WHERE a.id = b.tradeid ) )";
+mysql_query($mySql);
+
+?>
+<style type="text/css">
+.input_radio1{
+	vertical-align: top;
+	margin-top: -1.5px;
+	margin-left: 20px;
+}
+.input_btn1{
+	width: 93px;
+    height: 25px;
+	border-radius: 5px;
+    padding: 0;
+    color: #333;
+    font-weight: 700;
+    background: rgb(33, 172, 168);
+    border: 1px solid rgba(121, 121, 121, 1);
+	margin-right: 5px;
+}
+.select1{
+    width: 100px;
+	height: 25px;
+	margin-right: 10px;
+	border: 1px solid lightgray;
+}
+#qjProjectname{
+	width: 150px;
+	height: 25px;
+}
+.input_btn2{
+	width: 60px;
+	height: 25px;
+	color: #000;
+	border: 1px solid #000;
+	border-radius: 5px;
+    margin-left: 30px;
+	background-color: rgba(0, 153, 102, 1);
+}
+.tds1{
+	height: 35px;
+	padding: 0 10px;
+}
+.lable_active{
+	font-weight: bold;
+}
+</style>
+<table border="0" cellspacing="0" style='TABLE-LAYOUT: fixed; WORD-WRAP: break-word;border: 1px solid #000;width: 850px;'>
+    
+	<tr>
+		<td class="tds1">
+			<select name='choosePeriod' id='choosePeriod' class="select1">
+				<option value='0' <?php if ($period == 0) echo "selected" ?>>全部</option>
+				<option value='1' <?php if ($period == 1) echo "selected" ?>>最近30天</option>
+				<option value='2' <?php if ($period == 2) echo "selected" ?>>最近180天</option>
+				<option value='3' <?php if ($period == 3) echo "selected" ?>>今年</option>
+				<option value='4' <?php if ($period == 4) echo "selected" ?>>今年前</option>
+			</select>
+		        
+		    <select name='chooseCheck' id='chooseCheck' class='select1'>
+				<option value='' <?php if ($status == "") echo "selected" ?>>状态选择</option>
+				<option value='0' <?php if ($status == "0") echo "selected" ?>>未提交</option>
+				<option value='1' <?php if ($status == "1") echo "selected" ?>>未审核</option>
+				<option value='2' <?php if ($status == "2") echo "selected" ?>>审核通过</option>
+				<option value='3' <?php if ($status == "3") echo "selected" ?>>审核不通过</option>
+				<option value='4' <?php if ($status == "4") echo "selected" ?>>审核退回</option>
+		     </select>
+		     
+			<input name='qjProjectname' type='text' id='qjProjectname' placeholder="输入项目名称" autocomplete='off' value='<?php echo $name ?>'/>
+			<input type='button' name='Submit' class="input_btn2" value='查询' onClick='toSearchResult()' />
+		</td>	
+    </tr>
+</table>
+<table>
+    <tr>
+		<td class="tds1" style="padding-left: 10px;">
+			<input type='button' name='button' class="input_btn1" value='提交审核' onClick='toApply(1)' />
+			<input type='button' name='button' class="input_btn1" value='审核' onClick='toCheck()' />
+			<input type='button' name='button' class="input_btn1" value='生成订单' onClick='toCreateOrder()' />
+			
+			
+		</td>
+    </tr>
+</table>
+<?php 
+//步骤3：
+include "../model/subprogram/read_model_3.php";
+
+$SearchRows = "";
+//在设计项目 已经完成设计项目 已完结项目 
+if ($status == 1) {
+    $SearchRows = " AND a.Estate = $status ";
+}
+
+if ($period == 1) {
+    //最近30天
+    $SearchRows .= " AND TO_DAYS(NOW()) - TO_DAYS(a.BomCreated) <= 30";
+} else if ($period == 2) {
+    $SearchRows .= " AND TO_DAYS(NOW()) - TO_DAYS(a.BomCreated) <= 180";
+} else if ($period == 3) {
+    $SearchRows .= " AND YEAR(a.BomCreated) = YEAR(NOW())";
+} else if ($period == 4) {
+    $SearchRows .= " AND YEAR(a.BomCreated) < YEAR(NOW())";
+}
+
+if ($name) {
+    $SearchRows .= " and C.Forshort like '%$name%' ";
+}
+
+//检索条件隐藏值
+echo " <input type='hidden' name='proId' id='proId' value='' />";
+echo " <input type='hidden' name='period' id='period' value='$period' />";
+echo " <input type='hidden' name='status' id='status' value='$status' />";
+echo " <input type='hidden' name='name' id='name' value='$name' />";
+
+//echo"<a>&nbsp;全选&nbsp;</a>&nbsp;&nbsp;&nbsp;&nbsp;<a>&nbsp;不选&nbsp;</a>";
+
+//步骤5：
+include "../model/subprogram/read_model_5.php";
+
+//步骤6：需处理数据记录处理
+$i=1;
+$j=($Page-1)*$Page_Size+1;
+List_Title($Th_Col,"1",1);
+$mySql="SELECT a.Id, a.TradeId, s1.name as BomCreater, a.BomCreated,
+        s3.name as Operator, a.Submited, s2.name as Checker, a.Checked, a.CReasons, a.Estate,
+        b.TradeNo, b.CmptTotal, C.Forshort
+        FROM $DataIn.bom_object a 
+        INNER JOIN $DataIn.trade_info b on a.TradeId = b.TradeId
+        INNER JOIN $DataIn.trade_object c on a.TradeId = c.id
+        left join $DataPublic.staffmain s1 on a.BomCreater = s1.Number
+        left join $DataPublic.staffmain s3 on a.Operator = s3.Number
+        left join $DataPublic.staffmain s2 on a.Checker = s2.Number
+where 1 $SearchRows order by a.Id ";
+
+//echo $mySql;
+$myResult = mysql_query($mySql." $PageSTR",$link_id);
+if($myResult  && $myRow = mysql_fetch_array($myResult)){
+    do{
+        $m=1;  //必须
+        
+        $Id=$myRow["Id"];
+        $TradeId=$myRow["TradeId"];
+        $Estate=$myRow["Estate"];
+        switch($Estate){
+            case 0:$Estate="<div class='yellowB'>未提交</div>";
+            break;
+            case 1:$Estate="<div class='blueB'>未审核</div>";
+            break;
+            case 2:$Estate="<div class='greenB'>审核通过</div>";
+            break;
+            case 3:$Estate="<div class='redB'>审核不通过</div>";
+            break;
+            case 4:$Estate="<div class='redB'>审核退回</div>";
+            break;
+            default:
+                $Estate="<div class='redB'>未通过</div>";
+                break;
+        }
+        $BomCreated = "";
+        if (!empty( $myRow["BomCreated"])) {
+            $BomCreated = date("Y-m-d",strtotime($myRow["BomCreated"]));
+        }
+        $Submited = "";
+        if ($myRow["Submited"]) {
+            $Submited = date("Y-m-d",strtotime($myRow["Submited"]));
+        }
+
+        $ValueArray=array(
+                array(0=>$myRow["TradeNo"],         1=>"align='center'"),
+                array(0=>$myRow["Forshort"],	    1=>"align='center'"),
+                array(0=>$myRow["CmptTotal"],	    1=>"align='center'"),
+                array(0=>$BomCreated, 	            1=>"align='center'"),
+                array(0=>$myRow["Operator"],        1=>"align='center'"),
+                array(0=>$Submited,                 1=>"align='center'"),
+                array(0=>$myRow["Checker"],			1=>"align='center'"),
+                array(0=>$Estate, 	                1=>"align='center'"),
+                array(0=>"<a href='bom_info_read.php?proId=$Id'>BOM信息</a>",  1=>"align='center'"),
+                array(0=>"<a href='bom_mould_read.php?proId=$Id'>模具信息</a>",    1=>"align='center'"),
+                array(0=>"<a href='bom_loss_read.php?proId=$Id'>损耗信息</a>",1=>"align='center'")
+        );
+        $checkidValue=$TradeId;
+        $ChooseOut = "N";
+
+        $Estate=$myRow["Estate"];
+        $myOpration = "<input name='checkid[]' type='checkbox' id='checkid$i' data-state='$Estate' value='$checkidValue' disabled>";
+        include "../model/subprogram/read_model_6.php";
+    }while ($myRow = mysql_fetch_array($myResult));
+}
+else{
+    noRowInfo($tableWidth);
+}
+//步骤7：
+List_Title($Th_Col,"0",1);
+$myResult = mysql_query($mySql,$link_id);
+if ($myResult ) $RecordToTal= mysql_num_rows($myResult);
+pBottom($RecordToTal,$i-1,$Page,$Pagination,$Page_Size,$timer,$Login_WebStyle,$tableWidth);
+include "../model/subprogram/read_model_menu.php";
+?>
+<script >
+function toSearchResult(){
+	jQuery("#period").val(jQuery("#choosePeriod").val());
+	jQuery("#status").val(jQuery("#chooseCheck").val());
+	jQuery("#name").val(jQuery("#qjProjectname").val());
+
+	document.form1.action="bom_object_read.php";
+	document.form1.submit();
+}
+
+//申请
+function toApply(state) {
+
+	var choosedRow=0;
+	var proId;
+	var Estate;
+	
+	jQuery('input[name^="checkid"]:checkbox').each(function() {
+        if (jQuery(this).prop('checked') ==true) {
+			choosedRow=choosedRow+1;
+			if (choosedRow == 1) {
+				proId = jQuery(this).val();
+				Estate = jQuery(this).attr("data-state");
+			//} else {
+			//	Ids = Ids + "," + jQuery(this).val();
+			}
+        }
+	});
+
+	if (choosedRow == 0) {
+		alert("该操作要求选定记录！");
+		return;
+	}
+
+	if (choosedRow > 1) {
+		alert("该操作只能选取定一条记录!");
+		return;
+	}
+
+	//alert(Estate);
+	if (Estate != 0 && Estate != 3 && Estate != 4  ) {
+		alert("该项目已经提交审核!");
+		return;
+	}
+	
+	
+	var message=confirm("确定要进行此操作吗？");
+	if(message==false){
+		return;
+	}
+
+	jQuery.ajax({
+        url : 'bom_state_update.php',
+        type : 'post',
+        data : {
+            id : proId,
+            state : state
+        },
+        dataType : 'json',
+        beforeSend : function() {
+            //$('#LoginMsg').html('登入中，請稍後...').show();
+        },
+        success : function(result) {
+            if (result.rlt) {
+            	window.location.reload();
+            } else {
+                if (result.msg) {
+                	alert(result.msg);
+                } else {
+                	alert("提交审核操作有误!");
+                }
+            }
+        }
+    }).done(function() {
+        //$('#LoginMsg').html('').hide();
+    });
+}
+
+//审核
+function toCheck() {
+
+	var choosedRow=0;
+	var proId;
+	var Estate;
+	
+	jQuery('input[name^="checkid"]:checkbox').each(function() {
+        if (jQuery(this).prop('checked') ==true) {
+			choosedRow=choosedRow+1;
+			if (choosedRow == 1) {
+				proId = jQuery(this).val();
+				Estate = jQuery(this).attr("data-state");
+			//} else {
+			//	Ids = Ids + "," + jQuery(this).val();
+			}
+        }
+	});
+
+	if (choosedRow == 0) {
+		alert("该操作要求选定记录！");
+		return;
+	}
+
+	if (choosedRow > 1) {
+		alert("该操作只能选取定一条记录!");
+		return;
+	}
+
+	//审核
+	if (Estate != 1) {
+		alert("该项目不能审核!");
+		return;
+	}
+	
+	jQuery("#proId").val(proId);
+	
+	document.form1.action="bom_check.php";
+	document.form1.target = "_self";
+	document.form1.submit();
+}
+
+function toCreateOrder() {
+
+	var choosedRow=0;
+	var proId;
+	var Estate;
+	
+	jQuery('input[name^="checkid"]:checkbox').each(function() {
+        if (jQuery(this).prop('checked') ==true) {
+			choosedRow=choosedRow+1;
+			if (choosedRow == 1) {
+				proId = jQuery(this).val();
+				Estate = jQuery(this).attr("data-state");
+			//} else {
+			//	Ids = Ids + "," + jQuery(this).val();
+			}
+        }
+	});
+
+	if (choosedRow == 0) {
+		alert("该操作要求选定记录！");
+		return;
+	}
+
+	if (choosedRow > 1) {
+		alert("该操作只能选取定一条记录!");
+		return;
+	}
+
+	//alert(Estate);
+	if (Estate != 2 ) {
+		alert("该项目还没有审核通过!");
+		return;
+	}
+	
+	
+	var message=confirm("确定要进行此操作吗？");
+	if(message==false){
+		return;
+	}
+
+	jQuery.ajax({
+        url : 'bom_createorder.php',
+        type : 'post',
+        data : {
+        	proId : proId
+        },
+        dataType : 'json',
+        beforeSend : function() {
+            //$('#LoginMsg').html('登入中，請稍後...').show();
+        },
+        success : function(result) {
+            if (result.rlt) {
+            	//window.location.reload();
+            	alert("生成订单操作成功!");
+            } else {
+                if (result.msg) {
+                	alert(result.msg);
+                } else {
+                	alert("生成订单操作有误!");
+                }
+            }
+        },
+        error: function(e) {
+        	alert("生成订单出现错误!");
+        } 
+    }).done(function() {
+        //$('#LoginMsg').html('').hide();
+    });
+}
+
+</script>

@@ -1,0 +1,71 @@
+@charset "UTF-8";
+BODY {
+	margin-top: 0px;margin-left: 0px;BACKGROUND-POSITION: center 50%;FONT-FAMILY: "思源黑体";FONT-SIZE: 14px;COLOR: #333333;background-color: #F5F5F5;
+	SCROLLBAR-3DLIGHT-COLOR: #FFFFFF;SCROLLBAR-DARKSHADOW-COLOR: #FFFFFF;SCROLLBAR-TRACK-COLOR: #FFFFFF;
+	
+	SCROLLBAR-HIGHLIGHT-COLOR: #666666;
+	SCROLLBAR-SHADOW-COLOR: #666666;
+	SCROLLBAR-ARROW-COLOR: #666666;
+	SCROLLBAR-FACE-COLOR: #CCCCCC;
+	}
+TD{FONT-FAMILY: "思源黑体";FONT-SIZE: 16px;border: none #666666;}
+.StockId{
+	color: #009900;
+	FONT-SIZE: 14px;
+	HEIGHT: 22px;
+	border: none;
+}.QtyRight{
+	color: #009900;
+	FONT-SIZE: 14px;
+	HEIGHT: 23px;
+	border: none;
+	text-align: right;
+}
+
+
+.{
+	BORDER-BOTTOM: 1px solid;BORDER-top: 1px solid;background-color: #CCCCCC;}
+
+.ModelLineColorSet{   
+    border-left: 0px;border-right: 0px;border-bottom: 0px;
+    border-top: 1px solid #666666;}
+.{background-color: #CCCCCC;}
+.clWinHead {
+	FONT-WEIGHT: normal;FONT-SIZE: 11px;WIDTH: 250px;COLOR: #333333;TOP: 0px;HEIGHT: 14px;
+	border: 1px none #666666;
+	BACKGROUND-COLOR: #CCCCCC;
+	}
+
+select{position:relative;font-size:12px;line-height:18px;border:0px;color:#009900;}
+textarea{color: #009900;}
+input{color: #009900;FONT-SIZE: 14px;HEIGHT: 23px;}
+.BillNum{
+	FONT-SIZE: 16px;
+	HEIGHT: 23px;
+	background:transparent;
+	border: none;
+	text-align: center;
+}
+.readlink{COLOR:#000000;FILTER: dropshadow(color=#ffffff,offx=1,offy=1);}
+.A0000{border: none;}
+.A0001{border: none;BORDER-RIGHT:1px solid;}
+.A0010{border: none;BORDER-LEFT:1px solid;}
+.A0011{border: none;BORDER-LEFT:1px solid;BORDER-RIGHT: 1px solid;}
+.A0100{border: none;BORDER-BOTTOM: 1px solid;}
+.A0101{border: none;BORDER-BOTTOM: 1px solid;BORDER-RIGHT: 1px solid;}
+.A0110{border: none;BORDER-BOTTOM: 1px solid;BORDER-LEFT:1px solid;}
+.A0111{border: none;BORDER-BOTTOM: 1px solid;BORDER-LEFT:1px solid;BORDER-RIGHT: 1px solid;}
+.A1000{border: none;BORDER-top: 1px double;}
+.A1001{border: none;BORDER-top: 1px double;BORDER-RIGHT:1px solid;}
+.A1010{border: none;BORDER-top: 1px solid;BORDER-LEFT:1px solid;}
+.A1011{border: none;BORDER-top: 1px double;BORDER-LEFT:1px solid;BORDER-RIGHT:1px solid;}
+.A1101{BORDER-BOTTOM: 1px solid;BORDER-top: 1px solid;BORDER-LEFT:none;BORDER-RIGHT: 1px solid;}
+.A1100{border: none;BORDER-BOTTOM: 1px solid;BORDER-top: 1px solid;}
+.A1110{border: none;BORDER-BOTTOM: 1px solid;BORDER-top: 1px solid;BORDER-LEFT:1px solid;}
+.A1111{border: 1px solid;}
+
+.Text{FONT-SIZE: 9pt;border: thin solid #7F9DB9;}
+.TextOver{FONT-SIZE: 9pt;border: thin solid #7F9DB9;}
+.TextOut{FONT-SIZE: 9pt;}
+
+.tb{BORDER-BOTTOM: 1px dotted #cccccc;BORDER-top: 0px dotted #000000;BORDER-LEFT:0px dotted #000000;BORDER-RIGHT: 0px dotted #000000;}

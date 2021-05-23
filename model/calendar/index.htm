@@ -1,0 +1,122 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>带阴历和节日的JS日历代码</title>
+<script type="text/javascript" src="js/fxdaima.js"></script>
+<style type="text/css">
+body {
+	text-align:center;
+}
+td {
+	font-size: 12px;
+	line-height:160%
+}
+.todyaColor {
+	BACKGROUND-COLOR: #006600;
+	color:#FFCC00
+}
+</style>
+</head>
+<body onload=initial()>
+<script language=JavaScript><!--
+ if(navigator.appName == "Netscape" || parseInt(navigator.appVersion) < 4)
+ document.write("<h1>你的浏览器无法执行此程序。</h1>此程序在 IE4 以后的版本才能执行!!")
+//-->
+
+</script>
+<DIV id=detail style="POSITION: absolute"></DIV>
+<FORM name=CLD>
+  <div align="center">
+    <label></label>
+    <label></label>
+    <TABLE width="500" border="0" align="center" cellpadding="0" cellspacing="0" bordercolordark="#CC9900">
+      <TBODY>
+        <TR>
+          <TD align=middle width="444" height="48"><TABLE  height="27" border=0 cellpadding="0" cellspacing="1" bordercolor="#000000">
+              <TBODY>
+                <tr>
+                  <td colspan="7" valign="bottom" align="right"><table>
+                      <tr>
+                        <td width="50%" valign="bottom"><img src="images/logo.jpg" width="224" height="38" border="0"></td>
+                        <td width="50%" valign="top"><FONT id=YMBG style="FONT-FAMILY: 'Arial Black'; FONT-SIZE: 20pt"></FONT></td>
+                      </tr>
+                    </table></td>
+                </tr>
+                <TR>
+                  <TD bgColor=#000080 colSpan=7 align="center" height="25"><FONT color=#ffffff face=思源黑体 id=GZ
+ size=4></FONT></TD>
+                </TR>
+                <TR align=middle bgColor=#e0e0e0>
+                  <TD width=54 align="center" bgcolor="#000000"><font size="2" color="#FFFFFF"><img src="images/sunday.gif" width="54" height="16"></font></TD>
+                  <TD width=54 align="center" bgcolor="#000000"><font size="2" color="#FFFFFF"><img src="images/monday.gif" width="54" height="16"></font></TD>
+                  <TD width=54 align="center" bgcolor="#000000"><font size="2" color="#FFFFFF"><img src="images/tuesday.gif" width="54" height="16"></font></TD>
+                  <TD width=54 align="center" bgcolor="#000000"><font size="2" color="#FFFFFF"><img src="images/wednesday.gif" width="54" height="16"></font></TD>
+                  <TD width=54 align="center" bgcolor="#000000"><font size="2" color="#FFFFFF"><img src="images/thursday.gif" width="54" height="16"></font></TD>
+                  <TD width=54 align="center" bgcolor="#000000"><font size="2" color="#FFFFFF"><img src="images/friday.gif" width="54" height="16"></font></TD>
+                  <TD width=54 align="center" bgcolor="#000000"><font size="2" color="#FFFFFF"><img src="images/saturday.gif" width="54" height="16"></font></TD>
+                </TR>
+                <SCRIPT language=JavaScript><!--
+ var gNum
+ for(i=0;i<6;i++) 
+ {
+ document.write('<tr align=center id="hang'+i+'">')
+ for(j=0;j<7;j++) 
+ {
+ gNum = i*7+j
+ document.write('<td id="GD' + gNum +'" onMouseOver="mOvr(' + gNum +')" height="60" onMouseOut="mOut()"><table width=100%  height="50" border="0" cellpadding="0" cellspacing="1" bgcolor="#000000"><tr><td align="center"  id="SD' + gNum +'"  bgcolor="#FFFFFF" style="font-family:Arial Black" style="font-size:24pt">')
+ /*if(j == 0) document.write(' color=black')
+ if(j == 6)
+ if(i%2==1) document.write(' color=black')
+ else document.write(' color=black')*/
+ document.write('</tr></td></table><table width=100%   height="20" border="0" cellpadding="0" cellspacing="1" bgcolor="#000000"><tr><td align="center" id="LD' + gNum + '" valign="bottom" bgcolor="#FFFFFF" style="font-size:9pt"></tr></td></table></td>')
+ }
+ document.write('</tr>')
+ if(i != 5)
+ {
+ document.write('<tr height="3"><td colspan="7" id="HT' + i +'"  background="images/calendar1-1280-800.gif"></td></tr>')
+ }
+ }
+ //--></script>
+                <tr>
+                  <td colSpan=7 ><br>
+                    <table width=100% border="0" cellpadding="0" cellspacing="0">
+                      <tr>
+                        <td align="right"><div style="float:left; ">公历&nbsp;</div>
+                          <div style=" position:relative; width:32; height:18; float:left; margin-top:-3; ">
+                            <div style=" position:relative; width:50; height:20;" >
+                              <SELECT name=SY  style="position:absolute; top:-2; left:-2; " onchange=changeCld()
+ style="FONT-SIZE: 9pt">
+                              <SCRIPT language=JavaScript><!--
+ for(i=1900;i<2050;i++) document.write('<option style="background-color:#ffffff">'+i)
+ //--></script>
+                              </SELECT>
+                              &nbsp;</div>
+                          </div>
+                          <div style="float:left;">&nbsp;年&nbsp;</div>
+                          <div style="position:relative; width:20; height:18; float:left; margin-top:-3;">
+                            <div style=" position:relative; width:37; height:20;">
+                              <SELECT name=SM  style="position:absolute; top:-2; left:-2" onchange=changeCld()
+ style="FONT-SIZE: 9pt">
+                              <SCRIPT language=JavaScript><!--
+ for(i=1;i<13;i++) document.write('<option>'+i)
+ //--></script>
+                              </SELECT>
+                            </div>
+                          </div>
+                          <div style="float:left;">&nbsp;月&nbsp;</div>
+                          <img src="images/last-month.gif" width="23" height="12" border="0" onClick="pushBtm('MU')" /> <img src="images/this-month.gif" width="23" height="13" border="0" onClick="pushBtm('')" /> <img src="images/next-month.gif" width="24" height="12" border="0" onClick="pushBtm('MD')" /></td>
+                      </tr>
+                    </table></td>
+                </tr>
+              </TBODY>
+            </TABLE></TD>
+             <td  valign="top"> ???????????????
+        	</td>
+            
+        </TR>
+      </TBODY>
+    </TABLE>
+  </div>
+</FORM>
+</body>
+</html>

@@ -1,0 +1,85 @@
+@charset "UTF-8"
+BODY {
+	BACKGROUND-POSITION: center 50%; 
+	SCROLLBAR-FACE-COLOR: #FFFFFF; 
+	FONT-SIZE: 12px;  
+	SCROLLBAR-HIGHLIGHT-COLOR: #FFFFFF; 
+	SCROLLBAR-SHADOW-COLOR: #FFFFFF; 
+	COLOR: #999999; 
+	SCROLLBAR-3DLIGHT-COLOR: #FFFFFF; 
+	SCROLLBAR-ARROW-COLOR: #CC0000; 
+	SCROLLBAR-TRACK-COLOR: #FFFFFF; 
+	FONT-FAMILY: "思源黑体";
+	SCROLLBAR-DARKSHADOW-COLOR: #FFFFFF}
+TD{
+	FONT-SIZE: 12px; 
+	LINE-HEIGHT: 15px; 
+	FONT-FAMILY: "思源黑体"}
+.unnamed1 {
+	border-top-style: solid;
+	border-top-width: 1px;
+	border-top-color: #CCCCCC;	
+	border-left-width: 1px;
+	border-left-style: solid;
+	border-left-color: #CCCCCC;
+	border-right-style: solid;
+	border-right-width: 1px;
+	border-right-color: #CCCCCC;
+}
+.unnamed2 {
+	border-top-style: solid;
+	border-top-width: 1px;
+	border-top-color: #CCCCCC;	
+	border-right-style: solid;
+	border-right-width: 1px;
+	border-right-color: #CCCCCC;
+}
+.unnamed3 {
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-bottom-color: #CCCCCC;	
+	border-left-width: 1px;
+	border-left-style: solid;
+	border-left-color: #CCCCCC;
+	border-right-style: solid;
+	border-right-width: 1px;
+	border-right-color: #CCCCCC;
+}
+.unnamed4 {
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-bottom-color: #CCCCCC;	
+	border-left-style: solid;
+	border-left-width: 1px;
+	border-left-color: #CCCCCC;
+}
+
+body {
+	background-image: url();
+	margin-left: 0px;
+	margin-top: 6px;
+	background-color: #F5F5F5;
+}
+.style5 {font-size: 18px}
+
+A {
+	FILTER: progid:dximagetransform.microsoft.gradientwipe(duration=1); 
+	BEHAVIOR: url(effect.htc); 
+	CURSOR: pointer;
+	LINE-HEIGHT: 15pt; 
+	LETTER-SPACING: 1pt; 
+	HEIGHT: 1px; 
+	TEXT-DECORATION: none
+}
+A:link {
+	COLOR: #666666
+}
+A:visited {
+	COLOR: #666666
+}
+A:active {
+	COLOR: #666666
+}
+A:hover {
+	LEFT: 1px; COLOR: #ff9966; POSITION: relative; TOP: 2px
+}

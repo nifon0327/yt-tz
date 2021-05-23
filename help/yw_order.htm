@@ -1,0 +1,105 @@
+﻿
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<HTML xmlns="http://www.w3.org/1999/xhtml">
+<HEAD>
+<TITLE></TITLE>
+<META http-equiv=Content-Type content="text/html; charset=utf-8">
+<LINK href="common.css" type=text/css rel=stylesheet>
+<script src="jquery.js" type=text/javascript></script>
+<script src="common.js" type=text/javascript></script>
+<script src="jquery.json-2.2.min.js" type=text/javascript></script>
+<script src="shCore.js" type=text/javascript></script>
+<META content="MSHTML 6.00.2900.6082" name=GENERATOR>
+</HEAD>
+<BODY>
+未出明细页面帮助文件<br>
+<DIV class=postBody>
+	<DIV id=cnblogs_post_body>
+		<DIV class=cnblogs_code onClick="cnblogs_code_show('A1')">
+			<IMG class=code_img_closed id=code_img_closed_A1 alt="" src="ContractedBlock.png">
+			<IMG class=code_img_opened id=code_img_opened_A1 style="DISPLAY: none" onClick="cnblogs_code_hide('A1',event)" src="ExpandedBlockStart.gif">
+			<SPAN class=cnblogs_code_collapse onClick="cnblogs_code_hide('A1',event)">1、订单的单品毛利计算公式</SPAN>
+			<DIV class=cnblogs_code_hide id=cnblogs_code_open_A1><DIV>
+				订单金额=产品售价*订单数量*汇率<p></p>
+				采购成本=(配件需求数量+增购数量)*单价*汇率 之和<p></p>
+				订单单品毛利=(订单金额-采购成本)/订单数量
+		</DIV>
+	</DIV>
+</DIV>
+
+<BR>
+
+<DIV class=postBody>
+	<DIV id=cnblogs_post_body>
+		<DIV class=cnblogs_code onClick="cnblogs_code_show('A2')">
+			<IMG class=code_img_closed id=code_img_closed_A2 alt=""  src="ContractedBlock.png">
+			<IMG class=code_img_opened id=code_img_opened_A2 style="DISPLAY: none" onClick="cnblogs_code_hide('A2',event)" src="ExpandedBlockStart.gif">
+			<SPAN class=cnblogs_code_collapse onClick="cnblogs_code_hide('A2',event)">2、单品毛利或订单毛利过低原因分析</SPAN> 
+			<DIV class=cnblogs_code_hide id=cnblogs_code_open_A2><DIV>
+			1、因为订单拆分(导致其中一个拆分单存在增购数量):属合理现象<p></p>
+			2、配件存在增购数量:要分析增购是否合理、是否有需要<p></p>
+			3、如果没有增购的情况下，则可能是售价过低或配件成本过高，需分析配件价格(如加工费等)或BOM表是否合理，如果不合理，则要调整配件价格或BOM表；如果合理，则需要和客户沟通价格、订单最低数量等问题
+		</DIV>
+	</DIV>
+</DIV>
+<BR>
+<DIV class=postBody>
+	<DIV id=cnblogs_post_body>
+		<DIV class=cnblogs_code onClick="cnblogs_code_show('A3')">
+			<IMG class=code_img_closed id=code_img_closed_A3 alt=""  src="ContractedBlock.png">
+			<IMG class=code_img_opened id=code_img_opened_A3 style="DISPLAY: none" onClick="cnblogs_code_hide('A3',event)" src="ExpandedBlockStart.gif">
+			<SPAN class=cnblogs_code_collapse onClick="cnblogs_code_hide('A3',event)">3、订单单品净利计算公式</SPAN> 
+			<DIV class=cnblogs_code_hide id=cnblogs_code_open_A3><DIV>
+			订单金额=产品售价*订单数量*汇率<p></p>
+			配件成本=配件订单数量*单价*汇率 之和<p></p>
+			订单单品净利=(订单金额-配件成本-非美金配件成本*行政费比率0.07)/订单数量
+		</DIV>
+	</DIV>
+</DIV>
+<BR>
+<DIV class=postBody>
+	<DIV id=cnblogs_post_body>
+		<DIV class=cnblogs_code onClick="cnblogs_code_show('A4')">
+			<IMG class=code_img_closed id=code_img_closed_A4 alt=""  src="ContractedBlock.png">
+			<IMG class=code_img_opened id=code_img_opened_A4 style="DISPLAY: none" onClick="cnblogs_code_hide('A4',event)" src="ExpandedBlockStart.gif">
+			<SPAN class=cnblogs_code_collapse onClick="cnblogs_code_hide('A4',event)">4、订单单品净利过低原因分析</SPAN> 
+			<DIV class=cnblogs_code_hide id=cnblogs_code_open_A4><DIV>
+			售价过低或配件成本过高或BOM表不合理，需分析配件价格是否合理(如加工费等)，如果不合理，则要调整配件价格或BOM表；如果合理，则需要和客户沟通价格、订单最低数量等问题;查看BOM是否对应数量设置错误或重复配件等。
+			<br>还有一种情况是,由于配件关系的问题(非整除的关系),造成订单生成时配件的数量比实际要求的多(采购必须是整数,不能为小数,所以会向上进一位,成本自然增加)
+		</DIV>
+	</DIV>
+</DIV>
+
+<BR>
+<DIV class=postBody>
+	<DIV id=cnblogs_post_body>
+		<DIV class=cnblogs_code onClick="cnblogs_code_show('A5')">
+			<IMG class=code_img_closed id=code_img_closed_A5 alt=""  src="ContractedBlock.png">
+			<IMG class=code_img_opened id=code_img_opened_A5 style="DISPLAY: none" onClick="cnblogs_code_hide('A5',event)" src="ExpandedBlockStart.gif">
+			<SPAN class=cnblogs_code_collapse onClick="cnblogs_code_hide('A5',event)">5、产品报价规则</SPAN> 
+			<DIV class=cnblogs_code_hide id=cnblogs_code_open_A5><DIV>
+		    产品价格=(供应商价格*利润率+packing)*行政费比率0.07,其中利润率的幅度范围大概在15%--25%之间。<p></p>	
+		</DIV>
+	 </DIV>
+ </DIV>
+ 
+ <BR>
+<DIV class=postBody>
+	<DIV id=cnblogs_post_body>
+		<DIV class=cnblogs_code onClick="cnblogs_code_show('A6')">
+			<IMG class=code_img_closed id=code_img_closed_A6 alt=""  src="ContractedBlock.png">
+			<IMG class=code_img_opened id=code_img_opened_A6 style="DISPLAY: none" onClick="cnblogs_code_hide('A6',event)" src="ExpandedBlockStart.gif">
+			<SPAN class=cnblogs_code_collapse onClick="cnblogs_code_hide('A6',event)">6、页面功能操作明细</SPAN> 
+			<DIV class=cnblogs_code_hide id=cnblogs_code_open_A6><DIV>
+		    1.po,订单备注，生管备注，出货方式等栏可以直接单击订单空白处更新。<p></p>
+			2.单击理论利润栏的红色，绿色，淡黄数字，可以查看BOM表。<p></p>
+			3.产品中文名栏，黑色为未上传标准图产品，粉红为需重新上传标准图档产品。淡黄为标准图审核通过产品。<p></p>
+			4.单击鼠标右键出现的对页面操作的各功能：查询，更新，新增，加急，拆分，需求单异动，生产PI，未确定产品，更改标准图等。
+			  业务员可以根据订单具体情况选择相应的操作。
+		</DIV>
+	 </DIV>
+ </DIV>
+
+
+</BODY>
+</HTML>

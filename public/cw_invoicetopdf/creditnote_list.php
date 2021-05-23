@@ -1,0 +1,14 @@
+<?php 
+//处理Description超长现象
+			if($Description==""){$Rows_Dec=1;}
+			else{$length_Dec=strlen($Description);$Rows_Dec=ceil($length_Dec/50);}
+			$Hight=$Rows_Dec*6;//行的高度
+			$pdf->Cell(15,$Hight,$i,1,0,"C");
+			$pdf->Cell(25,$Hight,$PO,1,0,"C");
+			//$pdf->SetXY($pdf->GetX(),$pdf->GetY());
+			$pdf->MultiCell(100,6,$Description,1,"L",0,0);
+			$pdf->SetXY($pdf->GetX()+140,$pdf->GetY()-$Hight);
+			$pdf->Cell(15,$Hight,$Qty,1,0,"R");
+			$pdf->Cell(15,$Hight,$Unit,1,0,"R");
+			$pdf->Cell(20,$Hight,$Amount,1,1,"R");
+?>

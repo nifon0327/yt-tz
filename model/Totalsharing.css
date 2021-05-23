@@ -1,0 +1,18 @@
+.B0000{border: none;BORDER-COLOR:#FFFFFF;}
+.B0001{border: none;BORDER-RIGHT:1px solid;BORDER-COLOR:#FFFFFF;}
+.B0010{border: none;BORDER-LEFT:1px solid;BORDER-COLOR:#FFFFFF;}
+.B0011{border: none;BORDER-LEFT:1px solid;BORDER-RIGHT: 1px solid;BORDER-COLOR:#FFFFFF;}
+.B0100{border: none;BORDER-BOTTOM: 1px solid;BORDER-COLOR:#FFFFFF;}
+.B0101{border: none;BORDER-BOTTOM: 1px solid;BORDER-RIGHT: 1px solid;BORDER-COLOR:#FFFFFF;}
+.B01011110{border: none;BORDER-BOTTOM: 1px solid;BORDER-RIGHT:#FFFFFF 1px solid;}
+.B0110{border: none;BORDER-BOTTOM: 1px solid;BORDER-LEFT:1px solid;BORDER-COLOR:#FFFFFF;}
+.B0111{border: none;BORDER-BOTTOM: 1px solid;BORDER-LEFT:1px solid;BORDER-RIGHT: 1px solid;BORDER-COLOR:#FFFFFF;}
+.B01111110{border: none;BORDER-BOTTOM: 1px solid;BORDER-LEFT:1px solid;BORDER-RIGHT: #FFFFFF 1px solid ;}
+.B1000{border: none;BORDER-top: 1px double;BORDER-COLOR:#FFFFFF;}
+.B1001{border: none;BORDER-top: 1px double;BORDER-RIGHT:1px solid;BORDER-COLOR:#FFFFFF;}
+.B1010{border: none;BORDER-top: 1px solid;BORDER-LEFT:1px solid;BORDER-COLOR:#FFFFFF;}
+.B1011{border: none;BORDER-top: 1px double;BORDER-LEFT:1px solid;BORDER-RIGHT:1px solid;BORDER-COLOR:#FFFFFF;}
+.B1101{BORDER-BOTTOM: 1px solid;BORDER-top: 1px solid;BORDER-LEFT:none;BORDER-RIGHT: 1px solid;BORDER-COLOR:#FFFFFF;}
+.B1100{border: none;BORDER-BOTTOM: 1px solid;BORDER-top: 1px solid;BORDER-COLOR:#FFFFFF;}
+.B1110{border: none;BORDER-BOTTOM: 1px solid;BORDER-top: 1px solid;BORDER-LEFT:1px solid;BORDER-COLOR:#FFFFFF;}
+.B1111{border: 1px solid;BORDER-COLOR:#FFFFFF;}

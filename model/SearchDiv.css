@@ -1,0 +1,1 @@
+.SearchDiv {MAX-HEIGHT: 600px; HEIGHT:expression(document.body.clientheight > 600? "600px": "600px");OVERFLOW-Y:scroll; }

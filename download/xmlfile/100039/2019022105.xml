@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<INVOICE>
+  <Product>
+    <Ln.>1</Ln.>
+    <PO>C2018_001-7-5</PO>
+    <ProductCode>7-5-APCLT1R-8</ProductCode>
+    <Description></Description>
+    <Qty>1</Qty>
+    <UnitPrice>0.000</UnitPrice>
+    <Amount>0.00</Amount>
+  </Product>
+  <Product>
+    <Ln.>2</Ln.>
+    <PO>C2018_001-7-5</PO>
+    <ProductCode>7-5-APCLT1L-42</ProductCode>
+    <Description></Description>
+    <Qty>1</Qty>
+    <UnitPrice>0.000</UnitPrice>
+    <Amount>0.00</Amount>
+  </Product>
+  <Product>
+    <Ln.>3</Ln.>
+    <PO>C2018_001-7-5</PO>
+    <ProductCode>7-5-APCLT3R-72</ProductCode>
+    <Description></Description>
+    <Qty>1</Qty>
+    <UnitPrice>0.000</UnitPrice>
+    <Amount>0.00</Amount>
+  </Product>
+  <Product>
+    <Ln.>4</Ln.>
+    <PO>C2018_001-7-5</PO>
+    <ProductCode>7-5-APCLT3L-89</ProductCode>
+    <Description></Description>
+    <Qty>1</Qty>
+    <UnitPrice>0.000</UnitPrice>
+    <Amount>0.00</Amount>
+  </Product>
+</INVOICE>

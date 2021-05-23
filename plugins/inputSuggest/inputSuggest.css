@@ -1,0 +1,23 @@
+@charset "UTF-8";
+.suggest-bgiframe{
+    border:1px solid #C1C1C1;
+    visibility:hidden;
+    background:#FFF;
+    overflow-y:auto;
+    z-index:998;}
+
+.suggest-container{
+    border:0;
+    visibility:hidden;
+    background:#FFF;
+    overflow-y:auto;
+    z-index:999;}
+
+.suggest-item{
+    padding:3px 2px;
+}
+.suggest-active {
+    background:#33CCFF;
+    color:white;
+    padding:3px 2px;
+}			

@@ -1,0 +1,15 @@
+CREATE TABLE kqchangedate 
+(
+id int UNSIGNED NOT NULL AUTO_INCREMENT,
+Name varchar(16),
+Date date NOT NULL,
+jbTimes tinyint,
+Type tinyint,
+Sign tinyint,
+Locks tinyint,
+Operator mediumint,
+PRIMARY KEY(id),
+UNIQUE (Date)
+)
+
+

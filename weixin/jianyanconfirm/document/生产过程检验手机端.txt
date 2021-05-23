@@ -1,0 +1,219 @@
+
+
+生产过程检验主页面
+
+
+主页面列表显示接口
+
+传入参数json格式 
+{ 
+	"action" : "productionTest" , 
+	"id" : 记录编号id 
+}
+
+返回参数json格式 
+{
+	"status" : "" , 
+	"msg" : "" ,
+	"result" :  {
+					"recordNumber" : 记录编号 , 
+					"product" : "产品名称" , 
+					"productionLine" : "产线名称" , 
+					"list" : [ 
+								{ "id" : 记录id , "item" : "项目" , "component" : "构件编号" , "status" : 状态 } , 
+								... 
+							 ] 
+				} , 
+}
+
+
+openid对应的用户名接口
+
+传入参数json格式 
+{ 
+	"action" : "username" , 
+	"openid" : "用户的加密微信号(openid)" 
+}
+
+返回参数json格式 
+{ 
+	"status" : "" , 
+	"msg" : "" ,
+	"result" : "用户名" 
+}
+
+
+扫描添加接口
+
+传入参数json格式 
+{
+	"action" : "productionScanAdd" ,
+	"id" : 记录编号id ,
+	"sid" : "扫描获得的参数id" ,
+}
+
+返回参数json格式 
+{ 
+	"status" : "" , 
+	"msg" : "" ,
+	"result" : ""
+}
+
+
+添加页面 项目筛选列表接口
+
+传入参数json格式 
+{
+	"action" : "productionAddItem" ,
+}
+
+返回参数json格式 
+{
+	"status" : "" , 
+	"msg" : "" ,
+	"result" :  [ 
+				    { "id" : 项目id , "name" : "项目名称" } , 
+					... 
+				]
+}
+
+
+添加页面 楼栋筛选列表接口
+
+传入参数json格式 
+{
+	"action" : "productionAddBuilding" ,
+	"itemId" : 项目id ,
+}
+
+返回参数json格式 
+{
+	"status" : "" , 
+	"msg" : "" ,
+	"result" :  [ 
+				    { "id" : 楼栋id , "name" : 楼栋 } , 
+					... 
+				]
+}
+
+
+添加页面 楼层筛选列表接口
+
+传入参数json格式 
+{
+	"action" : "productionAddFloor" ,
+	"itemId" : 项目id ,
+	"buildingId" : 楼栋id 
+}
+
+返回参数json格式 
+{
+	"status" : "" , 
+	"msg" : "" ,
+	"result" :  [ 
+				    { "id" : 楼层id , "name" : 楼层 } , 
+					... 
+				]
+}
+
+
+添加页面 构件类型筛选列表接口
+
+传入参数json格式 
+{
+	"action" : "productionAddType" ,
+	"itemId" : 项目id ,
+	"buildingId" : 楼栋id ,
+	"floorId" : 楼层id 
+	
+}
+
+返回参数json格式 
+{
+	"status" : "" , 
+	"msg" : "" ,
+	"result" :  [ 
+				    { "id" : 构件类型id , "name" : "构件类型名称" } , 
+					... 
+				]
+}
+
+筛选之间有联动关系
+
+
+添加页面 列表显示接口
+
+传入参数json格式 
+{
+	"action" : "productionAdd" ,
+	"id" : 记录编号id ,
+	"itemId" : 项目id ,
+	"buildingId" : 楼栋id ,
+	"floorId" : 楼层id ,
+	"typeId" : 构件类型id
+}
+
+返回参数json格式 
+{ 
+	"status" : "" , 
+	"msg" : "" ,
+	"result" :  [
+					{ "id" : 记录id , "item" : "项目" , "component" : "构件编号" , "status" : 状态 } , 
+					...
+				]
+}
+
+
+添加页面保存接口
+
+传入参数json格式 
+{
+	"action" : "productionAddSave" ,
+	"id" : 记录编号id ,
+	"sid" : "选中记录id，格式为 3,1,2" ,
+}
+
+返回参数json格式 
+{ 
+	"status" : "" , 
+	"msg" : "" ,
+	"result" : ""
+} 
+
+保存后跳转到主页面，带一个参数 ?id=
+id : 记录编号id
+
+
+删除接口
+
+传入参数json格式 
+{
+	"action" : "productionDelete" ,
+	"id" : 记录编号id ,
+	"did" : "选中记录id，格式为 3,1,2" ,
+}
+
+返回参数json格式 
+{ 
+	"status" : "" , 
+	"msg" : "" ,
+	"result" : ""
+} 
+
+
+质检合格接口
+
+传入参数json格式 
+{
+	"action" : "productionTestOk" ,
+	"id" : 记录编号id ,
+	"tid" : "选中记录id，格式为 3,1,2" ,
+}
+
+返回参数json格式 
+{ 
+	"status" : "" , 
+	"msg" : "" ,
+	"result" : ""
+} 
+

@@ -1,0 +1,133 @@
+html,
+body {
+    padding: 0;
+    margin: 5;
+    font-size: 12px;
+}
+
+.contents {
+    font-size: 15px;
+    /* width: 75%; */
+    margin: 20px;
+    /* margin: auto; */
+    /* margin-top: 40px; */
+    /* padding-top: 2em; */
+}
+
+.ui-widget-content {
+    margin-right: 20px;
+}
+
+
+#uploadfile {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.hselect {
+    padding-bottom: 0px;
+    padding-left: 0px;
+}
+
+
+table {
+    font-size: 12px;
+    width: 100%;
+    border-width: 1px;
+    border-color: #333;
+    border-collapse: collapse;
+}
+
+.btable th,
+td {
+    text-align: center;
+    border-width: 1px;
+    padding: 5px 8px;
+    border-style: solid;
+    border-color: lightgray;
+    min-width: 50px;
+}
+
+.btable th {
+    font-weight: 400;
+    background-color: #f9f9f9;
+}
+
+.newhselect {
+    width: 90%;
+    margin: auto;
+}
+
+.newbtable {
+    margin-top: 25px;
+    width: 70%;
+}
+
+.hselect select {
+    border: none;
+    outline: none;
+    width: 100%;
+}
+
+.selection {
+    border: 1px solid lightgray;
+    display: inline-block;
+}
+
+#customer {
+    width: 100px;
+}
+
+#building,
+#floor,
+#type {
+    width: 60px;
+}
+
+button {
+    width: 100px;
+    background-color: #22b1b1;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 11px;
+    line-height: 18px;
+}
+
+.btns {
+    display: inline-block;
+}
+
+.btns .btn {
+    display: inline-block;
+    margin-left: 5px;
+    margin-right: 3px;
+    padding-bottom: 9px;
+}
+
+#search,
+#newback,
+#scrap,
+#delete {
+    font-size: 14px;
+    padding-left: 0.38rem;
+    padding-right: 0.38rem;
+}
+
+.hselect input {
+    border: none;
+}
+
+.inputs {
+    margin-left: 5px;
+    display: inline-block;
+    border: 1px solid lightgray;
+}
+
+.btable tr:hover {
+    background-color: rgb(245, 236, 199);
+}
+
+.btable tr td:nth-child(5) {
+    text-align: left;
+}

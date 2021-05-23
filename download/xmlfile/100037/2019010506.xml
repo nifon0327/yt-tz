@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<INVOICE>
+  <Product>
+    <Ln.>1</Ln.>
+    <PO>C2018_005-7-21</PO>
+    <ProductCode>7-21-YWQ-C-2-1281</ProductCode>
+    <Description></Description>
+    <Qty>1</Qty>
+    <UnitPrice>0.000</UnitPrice>
+    <Amount>0.00</Amount>
+  </Product>
+  <Product>
+    <Ln.>2</Ln.>
+    <PO>C2018_005-7-21</PO>
+    <ProductCode>7-21-YWQ-C-1-1261</ProductCode>
+    <Description></Description>
+    <Qty>1</Qty>
+    <UnitPrice>0.000</UnitPrice>
+    <Amount>0.00</Amount>
+  </Product>
+  <Product>
+    <Ln.>3</Ln.>
+    <PO>C2018_005-7-21</PO>
+    <ProductCode>7-21-YGB-1-01-1641</ProductCode>
+    <Description></Description>
+    <Qty>1</Qty>
+    <UnitPrice>0.000</UnitPrice>
+    <Amount>0.00</Amount>
+  </Product>
+  <Product>
+    <Ln.>4</Ln.>
+    <PO>C2018_005-7-21</PO>
+    <ProductCode>7-21-YTQ-C-1-1601</ProductCode>
+    <Description></Description>
+    <Qty>1</Qty>
+    <UnitPrice>0.000</UnitPrice>
+    <Amount>0.00</Amount>
+  </Product>
+</INVOICE>

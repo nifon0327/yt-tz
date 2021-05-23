@@ -1,0 +1,43 @@
+<?php 
+//电信-ZX  2012-08-01
+//代码共享-EWEN 2012-08-14
+include "../model/modelhead.php";
+$fromWebPage=$funFrom."_read";
+$nowWebPage=$funFrom."_updated";
+$_SESSION["nowWebPage"]=$nowWebPage; 
+$Log_Item="ipad模块关系";		//需处理
+$upDataSheet="$DataPublic.sc4_modulenexus";	//需处理
+$Log_Funtion="更新";
+$TitleSTR=$SubCompany." ".$Log_Item.$Log_Funtion;
+ChangeWtitle($TitleSTR);
+$DateTime=date("Y-m-d H:i:s");
+$Operator=$Login_P_Number;
+$OperationResult="Y";
+$Date=date("Y-m-d");
+$Lens=count($checkid);
+for($i=0;$i<$Lens;$i++){
+	$dModuleId=$checkid[$i];
+	//检查是否已存在，是则更新；否则新增
+	$OrderId=$i+1;
+	$checkSql=mysql_query("SELECT Id FROM $upDataSheet WHERE 1 and ModuleId=$ModuleId and dModuleId=$dModuleId order by ModuleId,Id",$link_id);	
+	if ($checkRow = mysql_fetch_array($checkSql)) {
+		$inRecode = "UPDATE $upDataSheet SET ModuleId='$ModuleId',dModuleId='$dModuleId',OrderId='$OrderId',Date='$Date',Operator='$Operator' WHERE 1 and ModuleId=$ModuleId and dModuleId=$dModuleId LIMIT 1";
+		$Log1="更新";
+		}
+	else{
+		$inRecode="INSERT INTO $upDataSheet (Id,ModuleId,dModuleId,OrderId,Date,Operator) VALUE (NULL,'$ModuleId','$dModuleId','$OrderId','$Date','$Operator')";
+		$Log1="新增";
+		}
+	$inRes=@mysql_query($inRecode);
+	if($inRes){
+		$Log.="上级模块 $ModuleName / $ModuleId 与下级模块 $dModuleId 的关系".$Log1."成功! <br>";
+		} 
+	else{
+		$Log.="<div class='redB'>上级模块 $ModuleName / $ModuleId 与下级模块 $dModuleId 的关系".$Log1."失败!</div><br>";
+		$OperationResult="N";
+		}
+	}//end for
+$IN_recode="INSERT INTO $DataIn.oprationlog (DateTime,Item,Funtion,Log,OperationResult,Operator) VALUES ('$DateTime','$Log_Item','$Log_Funtion','$Log','$OperationResult','$Operator')";
+$IN_res=@mysql_query($IN_recode);
+include "../model/logpage.php";
+?>

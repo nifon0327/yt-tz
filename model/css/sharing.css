@@ -1,0 +1,145 @@
+.timeTop{background-color: #f2f3f5;}
+.timeBottom{background-color: #F2F3F5;}
+A:link{COLOR: #55575a; TEXT-DECORATION: none}
+A:active{COLOR: #55575a; TEXT-DECORATION: none}
+A:visited{COLOR: #55575a; TEXT-DECORATION: none}
+A:hover{COLOR: #55575a}
+img {border:0px}
+select{position:relative;font-size:12px;line-height:18px;border:0px;color:#009900;}
+textarea{color: #009900;}
+input{color: #009900;FONT-SIZE: 12px;HEIGHT: 18px;}
+@media screen and (-webkit-min-device-pixel-ratio:0) {input{height: auto}}
+.readlink{COLOR:#000000;FILTER: dropshadow(color=#ffffff,offx=1,offy=1);}
+.A0000{border: none;}
+.A0001{border: none;BORDER-RIGHT:1px solid #e7e7e7;}
+.A0010{border: none;BORDER-LEFT:1px solid #e7e7e7;}
+.A0011{border: none;BORDER-LEFT:1px solid #e7e7e7;BORDER-RIGHT: 1px solid #e7e7e7;}
+.A0100{border: none;BORDER-BOTTOM: 1px solid #e7e7e7;}
+.A0101{border: none;BORDER-BOTTOM: 1px solid #e7e7e7;BORDER-RIGHT: 1px solid #e7e7e7;}
+.A0110{border: none;BORDER-BOTTOM: 1px solid #e7e7e7;BORDER-LEFT:1px solid #e7e7e7;}
+.A0111{border: none;BORDER-BOTTOM: 1px solid #e7e7e7;BORDER-LEFT:1px solid #e7e7e7;BORDER-RIGHT: 1px solid #e7e7e7;}
+.A1000{border: none;BORDER-top: 1px double;}
+.A1001{border: none;BORDER-top: 1px double;BORDER-RIGHT:1px solid #e7e7e7;}
+.A1010{border: none;BORDER-top: 1px solid #e7e7e7;BORDER-LEFT:1px solid #e7e7e7;}
+.A1011{border: none;BORDER-top: 1px double;BORDER-LEFT:1px solid #e7e7e7;BORDER-RIGHT:1px solid #e7e7e7;}
+.A1101{BORDER-BOTTOM: 1px solid #e7e7e7;BORDER-top: 1px solid #e7e7e7;BORDER-LEFT:none;BORDER-RIGHT: 1px solid #e7e7e7;}
+.A1100{border: none;BORDER-BOTTOM: 1px solid #e7e7e7;BORDER-top: 1px solid #e7e7e7;}
+.A1110{border: none;BORDER-BOTTOM: 1px solid #e7e7e7;BORDER-top: 1px solid #e7e7e7;BORDER-LEFT:1px solid #e7e7e7;}
+.A1111{border: 1px solid #e7e7e7;}
+
+.TM0000{
+	text-align: center;
+	border: none;
+	background:transparent
+	}
+.I0000C{
+	text-align: center;
+	border: none;
+}
+.I0000L{
+	text-align: left;
+	border: none;
+}
+.I0000R{
+	text-align: right;
+	border: none;
+}
+.I0100C{
+	text-align: center;
+	border-bottom: 1px solid;
+	border-top-style: none;
+	border-right-style: none;
+	border-left-style: none;
+}
+.I0100L{
+	text-align: left;
+	border-bottom: 1px solid;
+	border-top-style: none;
+	border-right-style: none;
+	border-left-style: none;
+}
+.I0100R{
+	text-align: right;
+	border-bottom: 1px solid;
+	border-top-style: none;
+	border-right-style: none;
+	border-left-style: none;
+}
+.Text{FONT-SIZE: 9pt;border: thin solid #7F9DB9;}
+.TextOver{FONT-SIZE: 9pt;border: thin solid #7F9DB9;}
+.TextOut{FONT-SIZE: 9pt;}
+
+.purpleN{color: #FF00CC;font-weight: normal;}
+.purpleB{color: #FF00CC;font-weight: bold;}
+.redN{color: #FF0000;font-weight: normal;}
+.redB{color: #FF0000;font-weight: bold;}
+.greenN{color: #009900;font-weight: normal;}
+.greenB{color: #009900;font-weight: bold;}
+.yellowN{color: #FF6633;font-weight: normal;}
+.yellowB{color: #FF6633;font-weight: bold;}
+.blueN{color: #0000CC;font-weight: normal;}
+.blueB{color: #0000CC;font-weight: bold;}
+.rmbB{font-weight: bold;}	
+
+.orangeN{color: #FF6600;font-weight: normal;}
+.orangeB{color: #FF6600;font-weight: bold;}
+
+.packingQty{background:transparent;FONT-SIZE: 11pt;HEIGHT: 18px;text-align: center;color: #009933;border: 1px solid #7F9DB9;}
+.read_tdfilter{filter:Alpha(Opacity=100,FinishOpacity=0,style=3)}
+.GZbottom{BORDER-BOTTOM: 1px dashed #000000;BORDER-top: none;BORDER-LEFT:none;BORDER-RIGHT: none;}
+
+.tb{BORDER-BOTTOM: 1px dotted #cccccc;BORDER-top: 0px dotted #000000;BORDER-LEFT:0px dotted #000000;BORDER-RIGHT: 0px dotted #000000;}
+.btn {
+BORDER-RIGHT: #7b9ebd 1px solid; PADDING-RIGHT: 2px; BORDER-TOP: #7b9ebd 1px solid; PADDING-LEFT: 2px; FONT-SIZE: 12px; FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr=#ffffff, EndColorStr=#cecfde); BORDER-LEFT: #7b9ebd 1px solid; CURSOR: pointer; COLOR: black; PADDING-TOP: 2px; BORDER-BOTTOM: #7b9ebd 1px solid;
+}
+.btn1_mouseout {
+BORDER-RIGHT: #7EBF4F 1px solid; PADDING-RIGHT: 2px; BORDER-TOP: #7EBF4F 1px solid; PADDING-LEFT: 2px; FONT-SIZE: 12px; FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr=#ffffff, EndColorStr=#B3D997); BORDER-LEFT: #7EBF4F 1px solid; CURSOR: pointer; COLOR: black; PADDING-TOP: 2px; BORDER-BOTTOM: #7EBF4F 1px solid;
+}
+.btn1_mouseover {
+BORDER-RIGHT: #7EBF4F 1px solid; PADDING-RIGHT: 2px; BORDER-TOP: #7EBF4F 1px solid; PADDING-LEFT: 2px; FONT-SIZE: 12px; FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr=#ffffff, EndColorStr=#CAE4B6); BORDER-LEFT: #7EBF4F 1px solid; CURSOR: pointer; COLOR: black; PADDING-TOP: 2px; BORDER-BOTTOM: #7EBF4F 1px solid;
+}
+.btn2 {padding: 2 4 0 4;font-size:12px;height:23;background-color:#ece9d8;border-width:1;}
+.btn3_mouseout {
+BORDER-RIGHT: #2C59AA 1px solid; PADDING-RIGHT: 2px; BORDER-TOP: #2C59AA 1px solid; PADDING-LEFT: 2px; FONT-SIZE: 12px; FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr=#ffffff, EndColorStr=#C3DAF5); BORDER-LEFT: #2C59AA 1px solid; CURSOR: pointer; COLOR: black; PADDING-TOP: 2px; BORDER-BOTTOM: #2C59AA 1px solid;
+}
+.btn3_mouseover {
+BORDER-RIGHT: #2C59AA 1px solid; PADDING-RIGHT: 2px; BORDER-TOP: #2C59AA 1px solid; PADDING-LEFT: 2px; FONT-SIZE: 12px; FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr=#ffffff, EndColorStr=#D7E7FA); BORDER-LEFT: #2C59AA 1px solid; CURSOR: pointer; COLOR: black; PADDING-TOP: 2px; BORDER-BOTTOM: #2C59AA 1px solid;
+}
+.btn3_mousedown
+{
+BORDER-RIGHT: #FFE400 1px solid; PADDING-RIGHT: 2px; BORDER-TOP: #FFE400 1px solid; PADDING-LEFT: 2px; FONT-SIZE: 12px; FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr=#ffffff, EndColorStr=#C3DAF5); BORDER-LEFT: #FFE400 1px solid; CURSOR: pointer; COLOR: black; PADDING-TOP: 2px; BORDER-BOTTOM: #FFE400 1px solid;
+}
+.btn3_mouseup {
+BORDER-RIGHT: #2C59AA 1px solid; PADDING-RIGHT: 2px; BORDER-TOP: #2C59AA 1px solid; PADDING-LEFT: 2px; FONT-SIZE: 12px; FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr=#ffffff, EndColorStr=#C3DAF5); BORDER-LEFT: #2C59AA 1px solid; CURSOR: pointer; COLOR: black; PADDING-TOP: 2px; BORDER-BOTTOM: #2C59AA 1px solid;
+}
+.btn_2k3 {
+BORDER-RIGHT: #002D96 1px solid; PADDING-RIGHT: 2px; BORDER-TOP: #002D96 1px solid; PADDING-LEFT: 2px; FONT-SIZE: 12px; FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr=#FFFFFF, EndColorStr=#9DBCEA); BORDER-LEFT: #002D96 1px solid; CURSOR: pointer; COLOR: black; PADDING-TOP: 2px; BORDER-BOTTOM: #002D96 1px solid;
+}
+.Css_DropShadow { 
+filter: DropShadow(Color=#FFFFFF, OffX=1, OffY=1, Positive=1)}
+.TitleModel{
+	font-size: 36px;
+	font-weight: bold;
+}
+.I0000RB{
+	text-align: right;
+	border: none;
+	background-color: #DFF4D5;
+	font-size: 12px;
+}
+.I0000RF{
+	text-align: right;
+	border: none;
+	background-color: #FFFFFF;
+	font-size: 12px;
+}
+.I0000LF{
+	text-align: left;
+	border: none;
+	background-color: #FFFFFF;
+	font-size: 12px;
+}
+
+.t-list {
+    position: absolute;
+}

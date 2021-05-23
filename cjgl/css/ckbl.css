@@ -1,0 +1,103 @@
+@charset "utf-8";
+
+.bodyDiv{margin:0 auto 0 auto;width: 640px;height: 100%;}
+td{font-family: "思源黑体";font-size: 10px;border: none #339900;}
+
+#titleDiv {position: relative;width: 100%;height: 110px;float: left;margin-bottom: 6px;}
+
+#titleDiv .pngDiv {position: relative;width: 108px;height: 108px;float: left;margin-top: 0px;}
+#titleDiv .pngDiv img {width: 105px; height:108px;border: 0px;}
+
+#titleDiv .weekDiv{position: relative;width: 108px;height: 110px;float: left;}
+#titleDiv .weekDiv #weekImg {margin: 0px auto; width: 108px; text-align: left;display: block; margin-left: 8px;}
+#titleDiv .weekDiv #weekImg ul {margin-left:-42px;}
+#titleDiv .weekDiv #weekImg li {float:left;list-style-type:none;}
+#titleDiv .weekDiv #weekImg img {display: block;width: 45px; height:60px; border: 0px;}
+
+#titleDiv .weekDiv #dateImg {color:#000000;font-family: Arial;font-size:16px;margin-top:75px; }
+
+
+#titleDiv .data1Div{position: relative; float: left; width: 296; height: 108px;margin-left: 18px;margin-top: 10px;}
+#titleDiv .data1Div td{font-size:11px;color:#000000;}
+#titleDiv .QRDiv {position: relative; float: right; width: 106; height: 108px;margin-top: 0px; margin-right: -7px;}
+
+#signDiv{position: relative;margin-left: 0px;float: left;}
+
+#tableDiv{position: relative;width: 100%;float: left; }
+
+
+
+
+
+.font12{
+	font-size: 12px;
+}
+
+.font16{
+	font-size: 16px;
+}
+
+.fontBold22{
+	font-size: 22px;
+	font-weight: bold;
+}
+
+.fontBold20{
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.fontBold18{
+	font-size: 18px;
+	font-weight: bold;
+}
+
+#showDetailDiv{
+	width: 320px;
+	height: 60px;
+	margin-top: 5px;
+}
+#showDetailDiv .leftDiv{
+	position: absolute;
+	margin-left: 8px;
+	width: 70px;
+}
+#showDetailDiv .middleDiv {
+	position: absolute;
+	width: 205px;
+	margin-left: 75px;
+}
+
+#showDetailDiv .rightDiv {
+	position: absolute;
+	margin-left: 290px;
+	margin-top: 20px;
+}
+
+#showDetailDiv  .numDiv{
+	position: absolute;
+	margin-top: 48px;
+	font-size: 12px;
+	color: #CDC9C9;
+}
+
+#showDetailDiv .middleDiv .StuffCnameDiv{
+	
+	font-size: 12px;
+}
+
+#showDetailDiv .middleDiv .llEstateDiv{
+	
+	margin-top: 12px;
+	font-size: 12px;
+}
+
+.llspan{
+	color: #009bd9;
+	font-weight: bold;
+}
+
+.input_check{
+	width: 20px;
+	height: 20px;
+}

@@ -1,0 +1,58 @@
+<?php 
+//电信-zxq 2012-08-01
+/*
+$DataIn.cwygjz
+$DataPublic.staffmain
+$DataIn.cwxzsheet
+二合一已更新
+*/
+include "../model/modelhead.php";
+//步骤2：
+$Log_Item="员工借支记录";			//需处理
+$fromWebPage=$funFrom."_read";
+$nowWebPage=$funFrom."_save";
+$_SESSION["nowWebPage"]=$nowWebPage;
+$ALType="fromWebPage=$fromWebPage&Pagination=$Pagination";
+//新增返回默认页面（参数只保留月份、分页、即可，其它均使用默认值，以便可以看到刚新增的记录）
+$Log_Funtion="保存";
+$TitleSTR=$SubCompany." ".$Log_Item.$Log_Funtion;
+ChangeWtitle($TitleSTR);
+$DateTime=date("Y-m-d H:i:s");
+$Operator=$Login_P_Number;
+$OperationResult="Y";
+//步骤3：需处理
+//员工过滤
+$NumberSTR="";
+if($_POST["ListId"]){//如果指定
+	$Counts=count($_POST["ListId"]);
+	$Ids="";
+	for($i=0;$i<$Counts;$i++){
+		$thisId=$_POST["ListId"][$i];
+		$Ids=$Ids==""?$thisId:$Ids.",".$thisId;
+		}
+	$NumberSTR="AND Number IN ($Ids)";
+	$InFo="员工ID在($Ids)的";
+	$Remark=FormatSTR($Remark);
+	$thisMonth=substr($PayDate,0,7);
+	//写入数据的条件：该日期大于入职日期，且未生成月统计资料
+	$inRecode="INSERT INTO $DataIn.cwygjz(BankId,Mid,PayDate,InDate,Number,Amount,Payee,Remark,Operator,Date,Estate,PLocks,creator,created)
+	SELECT '$BankId','0','$PayDate','0000-00-00',Number,'$Amount','0','$Remark','$Operator', CURDATE(),1,0,'$Operator','$DateTime' 
+	FROM $DataPublic.staffmain WHERE 1 $NumberSTR 
+	AND Number NOT IN (SELECT Number FROM $DataIn.cwxzsheet WHERE Month='$thisMonth' ORDER BY Number)";
+	$inResult=@mysql_query($inRecode);
+	if($inResult && mysql_affected_rows()>0){
+		$Log.="&nbsp;&nbsp;".$InFo."员工".$DayTemp."的".$Log_Item.$Log_Funtion."成功!</br>";
+		}
+	else{
+		$Log.="<div class='redB'>&nbsp;&nbsp;".$InFo."员工".$DayTemp."的".$Log_Item.$Log_Funtion."失败!</div></br>$inRecode";
+		$OperationResult="N";
+		}
+	}
+else{
+	$Log="<div class='redB'>未指定员工</div>";
+	}
+//操作日志
+$IN_recode="INSERT INTO $DataIn.oprationlog (DateTime,Item,Funtion,Log,OperationResult,Operator) VALUES ('$DateTime','$Log_Item','$Log_Funtion','$Log','$OperationResult','$Operator')";
+$IN_res=@mysql_query($IN_recode);
+include "../model/logpage.php";
+?>

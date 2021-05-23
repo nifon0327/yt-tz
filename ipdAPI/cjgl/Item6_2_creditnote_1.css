@@ -1,0 +1,43 @@
+#mainTable
+{
+	border-collapse: collapse;
+}
+
+#mainTable tr
+{
+	height: 50px;
+}
+
+#mainTable input
+{
+	height: 20px;
+	font-size: 14px;
+}
+
+#mainTable select
+{
+	height: 30px;
+}
+
+.rightColStyle
+{
+	 padding-left: 15px;
+}
+
+.leftColStyle
+{
+	width: 200px;
+	text-align: center;
+}
+
+.subHeadTitle td
+{
+	height: 14px;
+	line-height: 14px;
+	font-size: 14px;
+}
+
+.numINPUTout
+{
+	text-align: right;
+}

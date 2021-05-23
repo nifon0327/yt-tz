@@ -1,0 +1,127 @@
+@charset "UTF-8";
+*{margin:0;padding:0;}
+
+@font-face { 
+      font-family:Roboto-Light; src:url('fonts/Roboto-Light.ttf');
+}
+
+@font-face { 
+      font-family:Roboto-Medium; src:url('fonts/Roboto-Medium.ttf');
+}
+
+@font-face { 
+      font-family:Roboto-Regular; src:url('fonts/Roboto-Regular.ttf');
+}
+
+@font-face { 
+      font-family:Roboto-Italic; src:url('fonts/Roboto-Italic.ttf');
+}
+
+body {
+    background-color: rgb(242, 243, 245);  
+    text-align: center;	
+}
+
+.login-wrap {
+	background-color: white;
+	background-image:url(../login/images/logo1.png),url(../login/images/illustration.png);
+	background-repeat: no-repeat, no-repeat;  
+	background-position: 540px 70px, 0px 0px; 
+	position: fixed;
+    top: 45%;
+    left: 50%;
+    margin: -266px auto auto -421px;
+    width: 842px;
+	height: 531px;
+    text-align: center;    
+    overflow: hidden;
+	border-radius: 2px;
+	box-shadow:2px 2px 3px #aaaaaa;
+}
+.login-field{
+	margin-top: 218px;
+	margin-left: 421px;
+}
+.login-box{	
+	margin: 18px auto
+}
+.login-box input{
+	width: 298px;
+    height: 38px;
+	padding: 0 10px;
+	border-radius: 2px;
+    line-height: 30px;
+    outline: none;
+    font-size: 16px;
+    border: 1px solid rgb(231, 231, 231);
+    background: white;
+	color: rgb(148,149,152);
+}
+.login-box input:focus{
+	border-color: #48bbcb;
+}
+.login-box input:-webkit-autofill{
+	-webkit-text-fill-color: rgb(148,149,152) !important;
+	-webkit-box-shadow: 0 0 0 1000px white inset !important;
+}
+::-webkit-input-placeholder {
+	color: rgb(148,149,152) 
+}
+.login-field div:last-child{
+	margin-top:46px;
+}
+.login-button{	
+	background: rgb(72, 187, 203);
+	color: white;
+	width: 320px;
+	height: 40px;
+	cursor: pointer;
+	font-size: 16px;
+	border: none;
+	border-radius: 2px;
+}
+.login-button:hover{
+	background: #3fa9b8;
+}
+.login-footer{
+	position: fixed;
+    bottom: 40px;
+	width: 100%;
+	color: rgb(148,149,152);
+}
+.login-footer a{
+	display: inline-block;
+	width: 89px;
+	height: 14px;
+	line-height: 14px;
+	border-right: 1px solid rgb(148,149,152);
+	font-size: 14px;
+	color: rgb(148,149,152);
+	text-decoration: none
+}
+.login-footer a:hover{
+	color: rgb(206, 207, 208)
+}
+.login-footer a:last-child{
+	border: none
+}
+.login-footer p{
+	margin-top: 16px;
+	font-size: 12px;
+}
+@media screen and (max-height:580px){
+	.login-footer{
+		bottom: 6px;
+	}
+	.login-footer p{
+		margin-top: 6px;
+	}
+}
+@media screen and (min-height:581px) and (max-height:710px){
+	.login-footer{
+		bottom: calc((55% - 303px)*0.4);
+	}
+	.login-footer p{
+		margin-top: 10px;
+	}
+}

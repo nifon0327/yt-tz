@@ -1,0 +1,117 @@
+﻿ /*定义字体*/
+  	
+ @font-face { 
+        font-family:AshCloud8; src:url('../font/AshCloud8.ttf');
+  }
+  @font-face { 
+        font-family:VAGRoundedStd-Bold; src:url('../font/VAGRoundedStd-Bold.otf');   
+  }
+
+  @font-face { 
+        font-family:HelveticaNeueLTStd-Cn; src:url('/font/HelveticaNeueLTStd-Cn.ttf');   
+  }
+
+  @font-face { 
+        font-family:helveticaneue-light; src:url('../font/helveticaneue-light.otf');   
+  }
+
+  @font-face { 
+        font-family:PingFang_Medium; src:url('../font/PingFang_Medium.ttf');   
+  }
+
+  @font-face { 
+        font-family:PingFang_Regular; src:url('../font/PingFang_Regular.ttf');  
+  }
+  
+  
+  @font-face { 
+        font-family:PingFang_Light; src:url('../font/PingFang_Light.ttf');   
+  }
+
+  @font-face { 
+        font-family:PingFang_Bold; src:url('../font/PingFang_Bold.ttf');  
+        
+    
+  }
+
+	
+	.alignR {
+		float:right;
+		vertical-align: middle;
+	}
+	
+	.alignC {
+		
+		text-align:center;
+		margin-right: 10pt;
+	}
+	
+	.topFontB {
+		font-size: 80px;
+		color: #358fc1;
+		font-family: "PingFang_Regular";
+	}
+	
+	.topFontS {
+		font-size: 56px;
+		color: #848888;
+		font-family: "PingFang_Regular";
+	}
+	
+	.nomargin {
+		margin-top: 0pt;
+		margin-left: 0pt;
+	}
+	.wrapcz {
+		margin-top: 100pt;
+		margin-left: 10pt;
+	}
+	
+	.margin10 {
+		margin-top: 5pt;
+		margin-left: 10pt;
+	}
+	
+	.fontBlack34 {
+		font-size: 34px;
+		color: #000000;
+		font-family: "PingFang_Regular";
+	}
+	
+	.fontBlack40 {
+		font-size: 40px;
+		color: #000000;
+		font-family: "PingFang_Regular";
+	}
+	
+	.fontBlack45 {
+		font-size: 45px;
+		color: #000000;
+		font-family: "PingFang_Regular";
+	}
+	
+	.fontRed40 {
+		font-size: 40px;
+		color: #fd3131;
+		font-family: "PingFang_Regular";
+	}
+	.fontRed45 {
+		font-size: 45px;
+		color: #fd3131;
+		font-family: "PingFang_Regular";
+	}
+	.fontBlack32 {
+		font-size: 32px;
+		color: #000000;
+		font-family: "PingFang_Regular";
+	}
+	
+	.fontGray30 {
+		font-size: 30px;
+		color: #848888;
+		font-family: "PingFang_Regular";
+	}
+
+
+
+

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<INVOICE>
+  <Product>
+    <Ln.>1</Ln.>
+    <PO>2018_3_07-15-13</PO>
+    <ProductCode>15-13-PCLT02-55</ProductCode>
+    <Description></Description>
+    <Qty>1</Qty>
+    <UnitPrice>0.000</UnitPrice>
+    <Amount>0.00</Amount>
+  </Product>
+  <Product>
+    <Ln.>2</Ln.>
+    <PO>2018_3_07-15-13</PO>
+    <ProductCode>15-13-PCLT01-4</ProductCode>
+    <Description></Description>
+    <Qty>1</Qty>
+    <UnitPrice>0.000</UnitPrice>
+    <Amount>0.00</Amount>
+  </Product>
+  <Product>
+    <Ln.>3</Ln.>
+    <PO>2018_3_07-15-13</PO>
+    <ProductCode>15-13-PCLT01-21</ProductCode>
+    <Description></Description>
+    <Qty>1</Qty>
+    <UnitPrice>0.000</UnitPrice>
+    <Amount>0.00</Amount>
+  </Product>
+  <Product>
+    <Ln.>4</Ln.>
+    <PO>2018_3_07-15-13</PO>
+    <ProductCode>15-13-PCLT02-38</ProductCode>
+    <Description></Description>
+    <Qty>1</Qty>
+    <UnitPrice>0.000</UnitPrice>
+    <Amount>0.00</Amount>
+  </Product>
+</INVOICE>

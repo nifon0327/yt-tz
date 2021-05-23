@@ -1,0 +1,1 @@
+<a href="http://www.ebs.gov.cn/EntCertificate.aspx?domainId=6bf67e6e-a8ae-4cec-83d3-0f14035a8d4b" target="_blank"><img src="images/ebs.png" title="上海市市场监督管理局企业主体身份公示" alt="上海市市场监督管理局企业主体身份公示" width="140" height="50" /></a>

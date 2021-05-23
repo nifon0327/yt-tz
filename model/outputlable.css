@@ -1,0 +1,440 @@
+
+@media print{
+	#001{ display: none }
+	}
+.Dtablline {
+	FONT-FAMILY: Arial Narrow;
+	font-size: 32px;
+	font-weight: bolder;
+	border: thick double #000000;
+}
+.AutoCompany31{
+	FONT-FAMILY: "Arial Narrow";
+	font-size: 31px;
+	font-weight: bold;
+	letter-spacing: -0.05em;
+	line-height:28px;
+}
+.AutoCompany30{
+	FONT-FAMILY: "Arial Narrow";
+	font-size: 26px;
+	font-weight: bold;
+	letter-spacing: -0.05em;
+	line-height:24px;
+}
+.AutoCompany24{
+	FONT-FAMILY: "Arial Narrow";
+	font-size: 24px;
+	font-weight: bold;
+	letter-spacing: -0.05em;
+	line-height:18px;
+}
+
+.AutoDiv50{
+	border:none;
+	width:580px;
+	overflow:hidden;
+	FONT-FAMILY: "Arial Narrow";
+	font-size: 50px;
+	font-weight: bold;
+	letter-spacing: -0.05em;
+	text-align: center;
+	}
+.AutoDiv45{
+	border:none;
+	width:580px;
+	overflow:hidden;
+	FONT-FAMILY: "Arial Narrow";
+	font-size: 45px;
+	font-weight: bold;
+	letter-spacing: -0.05em;
+	text-align: center;
+	}
+.AutoDiv40{
+	border:none;
+	width:580px;
+	overflow:hidden;
+	FONT-FAMILY: "Arial Narrow";
+	font-size: 40px;
+	font-weight: bold;
+	letter-spacing: -0.05em;
+	text-align: center;
+	}
+.AutoDiv35{
+	border:none;
+	width:580px;
+	overflow:hidden;
+	FONT-FAMILY: "Arial Narrow";
+	font-size: 34px;
+	font-weight: bold;
+	letter-spacing: -0.05em;
+	text-align: center;
+	line-height:28px;
+	}
+.AutoDiv30{
+	border:none;
+	width:580px;
+	overflow:hidden;
+	FONT-FAMILY: "Arial Narrow";
+	font-size: 30px;
+	font-weight: bold;
+	letter-spacing: -0.05em;
+	text-align: center;
+	line-height:26px;
+	}
+.AutoDiv26{
+	border:none;
+	width:580px;
+	overflow:hidden;
+	FONT-FAMILY: "Arial Narrow";
+	font-size: 26px;
+	font-weight: bold;
+	letter-spacing: -0.05em;
+	text-align: center;
+	line-height:23px;
+	}
+.AutoDiv24{
+	border:none;
+	width:580px;
+	overflow:hidden;
+	FONT-FAMILY: "Arial Narrow";
+	font-size: 24px;
+	font-weight: bold;
+	letter-spacing: -0.05em;
+	text-align: center;
+	}
+
+.Font_BoxA {
+	FONT-FAMILY: "Arial Narrow";
+	font-size: 50px;
+	font-weight: bold;	
+}
+.Font_BoxB {
+	FONT-FAMILY: "Arial Narrow";
+	font-size: 30px;
+	font-weight: bold;	
+}
+
+.Font_Fill {
+	FONT-FAMILY: "Arial Narrow";
+	font-size: 20px;
+	font-weight: bold;	
+}
+.Font_eCode1 {
+	FONT-FAMILY: "Arial Narrow";
+	font-size: 50px;
+	font-weight: bold;
+	letter-spacing: -0.05em;
+}
+.AutoDiv{
+	border:none;
+	width:580px;
+	overflow:hidden;
+	FONT-FAMILY: "Arial Narrow";
+	font-size: 50px;
+	font-weight: bold;
+	letter-spacing: -0.05em;
+	text-align: center;
+	}
+
+.Font_eCode{
+	border:none;
+	width:570px;
+	overflow:hidden;
+	FONT-FAMILY: "Arial Narrow";
+	font-size: 50px;
+	font-weight: bold;
+	letter-spacing: -0.05em;
+	text-align: center;
+	}
+
+.div_mark{
+	border-top:0px;
+	height:0px;
+	border-right: 0px;
+	border-bottom: 0px;
+	border-left: 0px;
+}
+
+.A000 {
+	border: none;
+}
+.A0001 {
+	BORDER-RIGHT: thin solid #000000;
+	BORDER-TOP: none;
+	BORDER-LEFT: none;
+	BORDER-BOTTOM: none;
+}
+
+.A0100 {
+	BORDER-RIGHT: none;
+	BORDER-TOP: none;
+	BORDER-LEFT: none;
+	BORDER-BOTTOM: thin solid #000000;
+}
+.A0101 {
+	BORDER-RIGHT: thin solid #000000;
+	BORDER-TOP: none;
+	BORDER-LEFT: none;
+	BORDER-BOTTOM: thin solid #000000;
+}
+
+.A1000{
+	BORDER-BOTTOM: none;
+	BORDER-top: 2px solid #000000;
+	BORDER-LEFT:none;
+	BORDER-RIGHT:none;
+	font-family: Arial, Helvetica, sans-serif;
+	}
+.A0100{
+	BORDER-BOTTOM: 2px solid #000000;
+	BORDER-top: none;
+	BORDER-LEFT:none;
+	BORDER-RIGHT:none;
+	font-family: Arial, Helvetica, sans-serif;
+	}
+.A0010{
+	BORDER-BOTTOM: none;
+	BORDER-top: none;
+	BORDER-LEFT:2px solid #000000;
+	BORDER-RIGHT:none;
+	font-family: Arial, Helvetica, sans-serif;
+	}
+.A0001{
+	BORDER-BOTTOM: none;
+	BORDER-top: none;
+	BORDER-LEFT:none;
+	BORDER-RIGHT:2px solid #000000;
+	font-family: Arial, Helvetica, sans-serif;
+	}
+.A1010{
+	BORDER-BOTTOM: none;
+	BORDER-top: 2px solid #000000;
+	BORDER-LEFT:2px solid #000000;
+	BORDER-RIGHT:none;
+	font-family: Arial, Helvetica, sans-serif;
+	}
+.A1001{
+	BORDER-BOTTOM: none;
+	BORDER-top: 2px solid #000000;
+	BORDER-LEFT:none;
+	BORDER-RIGHT:2px solid #000000;
+	font-family: Arial, Helvetica, sans-serif;
+	}
+.A0110{
+	BORDER-BOTTOM: 2px solid #000000;
+	BORDER-top: none;
+	BORDER-LEFT:2px solid #000000;
+	BORDER-RIGHT:none;
+	font-family: Arial, Helvetica, sans-serif;
+	}
+.A0101{
+	BORDER-BOTTOM: 2px solid #000000;
+	BORDER-top: none;
+	BORDER-LEFT:none;
+	BORDER-RIGHT:2px solid #000000;
+	font-family: Arial, Helvetica, sans-serif;
+	}
+.A1100{
+	BORDER-BOTTOM: 2px solid #000000;
+	BORDER-top: 2px solid #000000;
+	BORDER-LEFT:none;
+	BORDER-RIGHT:none;
+	font-family: Arial, Helvetica, sans-serif;
+	}
+.A0011{
+	BORDER-BOTTOM: none;
+	BORDER-top: none;
+	BORDER-LEFT:2px solid #000000;
+	BORDER-RIGHT:2px solid #000000;
+	font-family: Arial, Helvetica, sans-serif;
+	}
+.A1110{
+	BORDER-BOTTOM: 2px solid #000000;
+	BORDER-top: 2px solid #000000;
+	BORDER-LEFT:2px solid #000000;
+	BORDER-RIGHT:none;
+	font-family: Arial, Helvetica, sans-serif;
+	}
+.A1101{
+	BORDER-BOTTOM: 2px solid #000000;
+	BORDER-top: 2px solid #000000;
+	BORDER-LEFT:none;
+	BORDER-RIGHT:2px solid #000000;
+	font-family: Arial, Helvetica, sans-serif;
+	}
+.A0111{
+	BORDER-BOTTOM: 2px solid #000000;
+	BORDER-top: none;
+	BORDER-LEFT:2px solid #000000;
+	BORDER-RIGHT:2px solid #000000;
+	font-family: Arial, Helvetica, sans-serif;
+	}
+.A1011{
+	BORDER-BOTTOM: none;
+	BORDER-top: 2px solid #000000;
+	BORDER-LEFT:2px solid #000000;
+	BORDER-RIGHT: 2px solid #000000;
+	font-family: Arial, Helvetica, sans-serif;
+	}
+.A1111{
+	border: 2px solid #000000;
+	font-family: Arial, Helvetica, sans-serif;
+	}
+.A0000{
+	border: none;
+	font-family: Arial, Helvetica, sans-serif;
+	}
+	
+.B1000{
+	BORDER-BOTTOM: none;
+	BORDER-top: 2px solid #000000;
+	BORDER-LEFT:none;
+	BORDER-RIGHT:none;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	}
+.B0100{
+	BORDER-BOTTOM: 2px solid #000000;
+	BORDER-top: none;
+	BORDER-LEFT:none;
+	BORDER-RIGHT:none;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	}
+.B0010{
+	BORDER-BOTTOM: none;
+	BORDER-top: none;
+	BORDER-LEFT:2px solid #000000;
+	BORDER-RIGHT:none;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	}
+.B0001{
+	BORDER-BOTTOM: none;
+	BORDER-top: none;
+	BORDER-LEFT:none;
+	BORDER-RIGHT:2px solid #000000;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	}
+.B1010{
+	BORDER-BOTTOM: none;
+	BORDER-top: 2px solid #000000;
+	BORDER-LEFT:2px solid #000000;
+	BORDER-RIGHT:none;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	}
+.B1001{
+	BORDER-BOTTOM: none;
+	BORDER-top: 2px solid #000000;
+	BORDER-LEFT:none;
+	BORDER-RIGHT:2px solid #000000;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	}
+.B0110{
+	BORDER-BOTTOM: 2px solid #000000;
+	BORDER-top: none;
+	BORDER-LEFT:2px solid #000000;
+	BORDER-RIGHT:none;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	}
+.B0101{
+	BORDER-BOTTOM: 2px solid #000000;
+	BORDER-top: none;
+	BORDER-LEFT:none;
+	BORDER-RIGHT:2px solid #000000;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	}
+.B1100{
+	BORDER-BOTTOM: 2px solid #000000;
+	BORDER-top: 2px solid #000000;
+	BORDER-LEFT:none;
+	BORDER-RIGHT:none;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	}
+.B0011{
+	BORDER-BOTTOM: none;
+	BORDER-top: none;
+	BORDER-LEFT:2px solid #000000;
+	BORDER-RIGHT:2px solid #000000;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	}
+.B1110{
+	BORDER-BOTTOM: 2px solid #000000;
+	BORDER-top: 2px solid #000000;
+	BORDER-LEFT:2px solid #000000;
+	BORDER-RIGHT:none;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	}
+.B1101{
+	BORDER-BOTTOM: 2px solid #000000;
+	BORDER-top: 2px solid #000000;
+	BORDER-LEFT:none;
+	BORDER-RIGHT:2px solid #000000;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	}
+.B0111{
+	BORDER-BOTTOM: 2px solid #000000;
+	BORDER-top: none;
+	BORDER-LEFT:2px solid #000000;
+	BORDER-RIGHT:2px solid #000000;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	}
+.B1011{
+	BORDER-BOTTOM: none;
+	BORDER-top: 2px solid #000000;
+	BORDER-LEFT:2px solid #000000;
+	BORDER-RIGHT: 2px solid #000000;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	}
+.B1111{
+	border: 2px solid #000000;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	}
+.B0000{
+	border: none;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	}
+.E0101 {
+	BORDER-RIGHT: #000000 1px solid; BORDER-TOP: medium none; FONT-SIZE: 15px; BORDER-LEFT: medium none; BORDER-BOTTOM: #000000 1px solid; FONT-FAMILY: Comic Sans MS
+	}
+.E0101_X {
+	BORDER-RIGHT: #000000 1px solid; BORDER-TOP: medium none; FONT-SIZE: 10px; BORDER-LEFT: medium none; BORDER-BOTTOM: #000000 1px solid; FONT-FAMILY: Comic Sans MS
+	}
+.E0001 {
+	FONT-SIZE: 15px;FONT-FAMILY: Comic Sans MS;border-right-width: 1px;border-right-style: solid;border-right-color: #000000;
+	}
+.E0100 {
+	FONT-SIZE: 15px; BORDER-BOTTOM: 1px solid #000000; FONT-FAMILY: Comic Sans MS
+	}
+.Box1100{
+	BORDER-BOTTOM: 2px solid #000000;
+	BORDER-top: 2px solid #000000;
+	BORDER-LEFT:none;
+	BORDER-RIGHT:none;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 26px;
+	}
+.Box1101{
+	BORDER-BOTTOM: 2px solid #000000;
+	BORDER-top: 2px solid #000000;
+	BORDER-LEFT:none;
+	BORDER-RIGHT:2px solid #000000;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 26px;
+	}

@@ -1,0 +1,83 @@
+body,html{font-size:12px; margin: 0; padding: 0;}
+#center{
+	position: fixed;
+    width: 100%;
+    height: 200px;
+    top: 0px;
+    bottom: 0px;
+    margin: auto;
+}
+#header,#footer{ 
+	margin:0; 
+	padding:0;
+	height: 35%;
+	width: 100%;
+	}
+#LoginD{
+	padding:0;
+	margin:auto;
+	width:420px;
+	height:200px;
+	BACKGROUND:#e7e7e7 url(../login.gif)  repeat-x 0px 0px;
+	}
+#LoginD #Title {
+	height: 50px;
+    line-height: 50px;
+    padding: 0px 15px;
+    font-size: 26px;
+    color: #ABAAAA;
+    text-shadow: 1px 1px 0px #FFFFFF;
+    border: none;
+	}
+#LoginD #login {
+	padding: 0px 15px;
+    HEIGHT: 100px;
+	line-height: 100px;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+	}
+#login FORM {
+	display: -webkit-flex;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+	}
+#login INPUT {
+	BORDER-TOP-WIDTH: 0px;
+	BORDER-BOTTOM-WIDTH: 0px;
+	BORDER-LEFT-WIDTH: 0px;
+	BORDER-RIGHT-WIDTH: 0px;
+	LINE-HEIGHT: 32px;
+	HEIGHT: 33px;
+	text-indent: 10px;
+	COLOR: #669933;
+	FONT-SIZE: 16px;
+	}
+#UserName {
+	BACKGROUND:#FFFFFF url(../UserName.gif) no-repeat 3px 7px;
+	WIDTH: 142px;
+	border: 1px solid #000000;
+	}
+#Password {
+	BACKGROUND:#FFFFFF url(../Password.gif)  no-repeat 3px 7px;
+	WIDTH: 140px;
+	MARGIN-LEFT:10px;
+	}
+#SignIn {
+	BACKGROUND: url(../SignIn.gif); 
+	MARGIN-LEFT:10px;
+	WIDTH: 77px; 
+	CURSOR: pointer; 
+	}
+#LoginD #Company {
+	padding: 0px 15px;
+    font-size: 16px;
+    height: 50px;
+    line-height: 50px;
+    color: #ABAAAA;
+    float: right;
+    text-shadow: 1px 1px 0px #FFFFFF;
+    border: none;
+	}

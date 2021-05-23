@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<INVOICE>
+  <Product>
+    <Ln.>1</Ln.>
+    <PO>18_12_19-3-2</PO>
+    <ProductCode>3-2-PCB12L-290</ProductCode>
+    <Description></Description>
+    <Qty>1</Qty>
+    <UnitPrice>0.000</UnitPrice>
+    <Amount>0.00</Amount>
+  </Product>
+  <Product>
+    <Ln.>2</Ln.>
+    <PO>18_12_19-3-2</PO>
+    <ProductCode>3-2-PCB4R-137</ProductCode>
+    <Description></Description>
+    <Qty>1</Qty>
+    <UnitPrice>0.000</UnitPrice>
+    <Amount>0.00</Amount>
+  </Product>
+  <Product>
+    <Ln.>3</Ln.>
+    <PO>18_12_19-3-2</PO>
+    <ProductCode>3-2-PCB13L-307</ProductCode>
+    <Description></Description>
+    <Qty>1</Qty>
+    <UnitPrice>0.000</UnitPrice>
+    <Amount>0.00</Amount>
+  </Product>
+  <Product>
+    <Ln.>4</Ln.>
+    <PO>18_12_19-3-2</PO>
+    <ProductCode>3-2-PCB13R-358</ProductCode>
+    <Description></Description>
+    <Qty>1</Qty>
+    <UnitPrice>0.000</UnitPrice>
+    <Amount>0.00</Amount>
+  </Product>
+</INVOICE>

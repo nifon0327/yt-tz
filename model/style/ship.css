@@ -1,0 +1,559 @@
+
+* {margin:0;padding:0} 
+
+.sharp{width:100%; height:100%;margin:20px auto 0;float:left;}
+.sharp_b{width:100%; height:100%;float:left;margin-right:0;}
+.sharp_c{width:100%; height:100%;margin:15px auto 0;float:left;}
+.sharp_d{margin:5px auto 0;float:center;background:#000;color:#FFF;height:width;}
+.sharp.content div{padding:0px;text-indent:2em;}
+.sharp_b.content div{padding:0px;text-indent:2em;}
+/*.content{height:180px;}*/
+ 
+
+.b1,.b2,.b3,.b4,.b5,.b6,.b7,.b8{height:1px; font-size:1px; overflow:hidden; display:block;}
+.b1,.b8{margin:0 5px;}
+.b2,.b7{margin:0 3px;border-right:2px solid; border-left:2px solid;}
+.b3,.b6{margin:0 2px;border-right:1px solid; border-left:1px solid;}
+.b4,.b5{margin:0 1px;border-right:1px solid; border-left:1px solid; height:2px;}
+.content {border-right:1px solid;border-left:1px solid;overflow:hidden;}
+
+.color1 .b2,.color1 .b3,.color1 .b4,.color1 .b5,.color1 .b6,.color1 .b7,.color1 .content{border-color:#000;}
+.color1 .b1,.color1 .b8{background:#000;}
+
+.color1 .b2,.color1 .b3,.color1 .b4,.color1 .b5,.color1 .b6,.color1 .b7,.color1 .content{background:#000;}
+
+.color2 .b2,.color2 .b3,.color2 .b4,.color2 .b5,.color2 .b6,.color2 .b7,.color2 .content{border-color:#000;}
+.color2 .b1,.color2 .b8{background:#000;}
+
+.color2 .b2,.color2 .b3,.color2 .b4,.color2 .b5,.color2 .b6,.color2 .b7,.color2 .content{background:#FFF;}
+
+/*b.eCodetext{FONT-FAMILY: Castellar;color:#000;font-size:40px;text-align : center;}
+b.eCodetext{FONT-FAMILY:PrincetownD;color:#000;font-size:42px;text-align : center;}
+b.eCodetext{FONT-FAMILY:Decorated 035 BT;color:#000;font-size:36px;text-align : center;word-spacing:25px;}*/
+
+iframe{
+   scrolling:none;
+   overflow-x:hidden;
+   overflow-y:hidden;
+}
+ 
+.aaa{
+     border-top-style: none;	
+	 border-right-style: none;	
+	 border-bottom-style: none;	
+	 border-left-style: none;
+      }
+	  
+
+.eCodetext{
+	FONT-FAMILY:Arial;
+	color:#000;
+	font-size:49.18pt;
+	text-align : center;
+	font-weight:bold;
+	line-height:50px;
+	}
+
+.bomtext{
+	FONT-FAMILY: Arial;
+	color:#000;
+	font-size:20px;
+	}
+
+.shiptext{
+	FONT-FAMILY: Times;
+	color:#FFF;
+	font-size:13.39pt;
+	background: #000;
+	line-height:25px;
+	font-weight:bold;
+	}
+
+.Placetext{
+	FONT-FAMILY: Times;
+	color:#FFF;
+	font-size:15.5pt;
+	font-weight:bold;
+	background: #000;
+        
+	}
+
+.cNametext{
+	FONT-FAMILY:Arial;
+	color:#000;
+	font-size:12px;
+	text-align : center;
+	line-height:15px;	
+	}
+.div_h40{
+	height:38px;
+	background-color:#000000;
+	text-align:center;
+	display:block;
+    }
+	
+.div_h40 span{
+	FONT-FAMILY: CG Omega (WT) Bold;
+	color:#FFF;
+	font-size:32pt;
+	font-weight:bold;
+	text-align:center;
+	line-height:38px;
+	}
+
+.Box_title{
+	FONT-FAMILY:Times;
+	color:#000;
+	font-size:15.32pt;
+	font-weight:bold;
+}
+        
+.div_h30{
+	height:30px;
+	background-color:#000000;
+	text-align:center;
+	display:block;
+    }
+	
+.div_h30 span{
+	FONT-FAMILY: CG Omega (WT) Bold;
+	color:#FFF;
+	font-size:24pt;
+	font-weight:bold;
+	text-align:center;
+	line-height:30px;
+	}
+        
+.Box_title6{
+	FONT-FAMILY:Times;
+	color:#000;
+	font-size:12pt;
+	font-weight:bold;
+        line-height: 30px;
+        vertical-align: middle;
+	}
+ 
+.Box_textB6{
+	FONT-FAMILY:CG Omega (WT) Bold;
+	color:#000;
+	font-size:13pt;
+	font-weight:bold;
+        line-height:20px;
+        vertical-align: bottom;
+	}
+        
+.Box_textB{
+	FONT-FAMILY:CG Omega (WT) Bold;
+	color:#000;
+	font-size:18pt;
+	font-weight:bold;
+	}
+        
+.div_h32{
+	height:30px;
+	width:38px;
+	background-color:#000000;
+	text-align:center;
+	display:block; 
+    }
+	
+.div_h32 span{
+	FONT-FAMILY:CG Omega (WT) Bold;
+	color:#FFF;
+	font-size:23pt;
+	font-weight:bold;
+        line-height:30px;
+	text-align:center;
+	}
+.div_h20{
+	height:20px;
+	width:20px;
+	background-color:#000000;
+	text-align:center;
+	display:block; 
+    }
+	
+.div_h20 span{
+	FONT-FAMILY:CG Omega (WT) Bold;
+	color:#FFF;
+	font-size:16pt;
+	font-weight:bold;
+        line-height:20px;
+	text-align:center;
+	}
+	
+.div_boxTable{
+	height:85px;
+	max-height:85px;
+	height:expression(this.height>85?"85px":this.height); 
+	width:260px;
+	text-align:center;
+	vertical-align:center;
+}
+.Font_title{
+	FONT-FAMILY: Times;
+	font-size: 11pt;
+}
+
+.Qty_title{
+	FONT-FAMILY: Times;
+	font-size: 10 pt;
+}
+
+.code_title{
+	FONT-FAMILY: Arial;
+	font-size: 11 pt;
+	font-weight: bold;
+}
+
+.code_title0{
+	FONT-FAMILY: Arial;
+	font-size: 8 pt;
+}
+
+.Font_val {
+	FONT-FAMILY: Arial;
+	font-size: 11pt;
+	font-weight: bold;
+}
+
+.Font_val9 {
+	FONT-FAMILY: Arial;
+	font-size: 9pt;
+	font-weight: bold;
+}
+
+.label18_font1{
+	FONT-FAMILY: MyriadPro-Bold;
+	font-size: 24 pt;
+}
+
+.label18_font2{
+	FONT-FAMILY: Arial;
+	font-size: 22 pt;
+}
+
+.label23_font1{
+	FONT-FAMILY: Arial;
+	font-size:12pt;
+	font-weight: bold;
+	line-height:20px;
+}
+
+.label23_font2{
+	FONT-FAMILY: Arial;
+	font-size: 12pt;
+}
+
+.label23_font3{
+	FONT-FAMILY: Arial;
+	font-size: 28pt;
+	font-weight: bold;
+}
+.label23_font4{
+FONT-FAMILY:Arial;
+	color:#000;
+	font-size:32.18pt;
+	text-align : center;
+	font-weight:bold;
+	line-height:50px;
+}
+
+.label23_font5{
+	FONT-FAMILY: Arial;
+	font-size: 16pt;
+	color:#000;
+	text-align : center;
+	font-weight:bold;
+	line-height:20px;
+}
+
+.ship_val{
+	FONT-FAMILY: Arial;
+	font-size: 12.12pt;
+	font-weight: bold;
+	line-height:21px;
+	}
+.Font_val19 {
+	FONT-FAMILY: Arial;
+	font-size: 19 pt;
+	font-weight: bold;
+	text-align:center;
+	vertical-align:bottom;
+}
+
+.Font_val20 {
+	FONT-FAMILY: Arial;
+	font-size: 20 pt;
+	font-weight: bold;
+	text-align:center;
+	vertical-align:bottom;
+}
+
+.Font_date {
+	FONT-FAMILY: Arial;
+	font-size: 10pt;
+	font-weight: bold;
+	vertical-align:top;
+}
+
+.dashed_div{
+ border: 2px dashed #000;
+ height:30 px;
+ width:220 px;
+ }
+ 
+ .dashed_div2{
+ border: 2px dashed #000;
+ vertical-align: middle;
+ height:30px;
+ width:250 px;
+ }
+ 
+.dashed_td{
+ border-top: 2px dashed #000;
+ border-bottom:2px dashed #000;
+ border-right:2px dashed #000;
+ padding:3px 10px;
+ }
+ 
+.dashed_td span{
+	FONT-FAMILY: Arial;
+	color:#000;
+	font-size:13pt;
+	font-weight:bold;
+	line-height:16px;
+ }
+.word_tbl {
+  border-left:1px solid #000;
+  border-right:1px solid #000;
+}
+.td_right {
+  border-right:1px solid #000;
+}
+.td_line{
+  height:21px;
+  border-bottom:1px solid #000;
+  text-align:left;}
+
+.td_line30{
+  height:28px;
+  border-bottom:1px solid #000;
+  text-align:left;}
+
+.td_line50{
+  height:42px;
+  border-bottom:1px solid #000;
+  text-align:left;
+  white-space:nowrap;
+  word-break: keep-all;
+  }
+ .td_line52{
+  height:50px;
+  border-bottom:1px solid #000;
+  text-align:left;
+  white-space:nowrap;
+  word-break: keep-all;
+  }
+  
+.td_botline{
+  border-top:1mm  solid #000;
+  text-align:center;
+  vertical-align:top;
+  }
+
+.td_botline1{
+  text-align:center;
+  vertical-align:top;
+  }
+
+	
+.div_line{
+	height:25px;
+	width:85%;
+	border-bottom:1px solid #000;
+	text-align:center;
+}
+.div_row{
+	margin:0px;
+	padding:0px;
+	position:relative;
+	float:left;
+	padding-bottom:-1px;
+  }
+.div_shiptext{
+	background:#000;
+	height:25px;
+	width:90px;
+	position:relative;
+	float:left;
+	text-align:center;
+	vertical-align:middle;
+}
+.div_shipval{
+	background:#FFF;
+	height:21px;
+	width:462px;
+	border-top: 2px dashed #000;
+    border-bottom:2px dashed #000;
+    border-right:2px dashed #000;
+	position:relative;
+	float:left;
+	text-align:center;
+	vertical-align:middle;
+}
+
+.div_endPlace{
+	background:#FFF;
+	height:21px;
+	width:462px;
+	border: 2px dashed #000;
+	position:relative;
+	float:center;
+	text-align:center;
+	vertical-align:middle;
+}
+.div_endPlace6{
+	background:#FFF;
+	height:21px;
+	width:482px;
+	border: 2px dashed #000;
+	position:relative;
+        margin-top:8px;
+	float:center;
+	text-align:center;
+	vertical-align:middle;
+}
+
+.div_endPlace6 span{
+FONT-FAMILY: Arial;
+	font-size: 14pt;
+	font-weight: bold;
+	line-height:21px;
+}
+
+.td_Topright{
+	background:url(shipimages/top_right.jpg);
+    background-repeat: no-repeat;
+    background-color:#FFF;
+    background-position:0px 4px;
+	}
+.td_Topleft{
+	background:url(shipimages/top_left.jpg);
+    background-repeat: no-repeat;
+    background-color:#FFF;
+    background-position:0px 4px;
+	}
+.td_Bottomleft{
+	background:url(shipimages/bottom_left.jpg);
+	background-repeat: no-repeat;
+	background-color:#FFF;
+	}
+	
+.td_Bottomright{
+	background:url(shipimages/bottom_right.jpg);
+	background-repeat: no-repeat;
+	background-color:#FFF;
+	
+	}
+.td_Verleft{
+	background:url(shipimages/ver_leftline.jpg);
+	background-repeat: repeat-y;
+	background-color:#FFF;
+	}
+	
+.td_Verright{
+	background:url(shipimages/ver_rightline.jpg); 
+	background-repeat: repeat-y; 
+	background-color:#FFF
+	}
+	
+.td_Horbottom{
+	background:url(shipimages/hor_bottomline.jpg);
+	background-repeat: repeat-x;
+	background-color:#FFF;
+	}  
+	
+.td_Hortop{
+	background:url(shipimages/hor_topline.jpg);
+	background-repeat: repeat-x;
+	background-color:#FFF;
+	background-position:0px 4px;
+	} 
+	
+.td_smallleft {
+	background:url(shipimages/small_left.jpg);
+	background-repeat: no-repeat;
+	background-color:#000;
+	}
+	
+.td_smallright{
+	background:url(shipimages/small_right.jpg);
+	background-repeat: no-repeat;
+	background-color:#000;
+	}
+.td_smallleft6 {
+	background:url(shipimages/small_left20.jpg);
+	background-repeat: no-repeat;
+	background-color:#000;
+	}
+	
+.td_smallright6{
+	background:url(shipimages/small_right20.jpg);
+	background-repeat: no-repeat;
+	background-color:#000;
+	}
+#Skech_Div {margin:0}
+#Skech_Div ul {width:392px;height:70px;list-style:none}
+#Skech_Div li {float:left;width:190px;height:70px;text-align:center;line-height:33px; margin-right:5px;list-style:none;}
+#Skech_Div li dl{list-style:none}
+
+
+.Skech_Divs {margin:0}
+.Skech_Divsul {width:392px;height:70px;list-style:none}
+.Skech_Divsli {float:left;width:190px;height:70px;text-align:center;line-height:33px; margin-right:5px;list-style:none;}
+.Skech_Divsli dl{list-style:none}
+
+
+.div_cl1{
+	height:70px;
+	width: 70%;
+	position:relative;
+	float:left;
+  }
+
+.div_cl2{
+	width: 30%;
+	position:relative;
+	float:right;
+  }
+
+.div_cl3{
+	height:70px;
+	width:300px;
+	position:relative;
+	float:left;
+  }
+
+.div_cl4{
+	position:relative;
+	float:right;
+  }
+
+.div_cl5{
+	height:72px;
+	width:220px;
+	position:relative;
+	float:left;
+  }
+
+.div_cl6{
+	position:relative;
+	float:right;
+  }
+.span_cel1{
+	FONT-FAMILY: Arial;
+	text-align:center;
+	vertical-align:bottom;
+}
+

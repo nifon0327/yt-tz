@@ -1,0 +1,35 @@
+2、改写web下admin和web中index.php的配置
+
+（1）将system和application的路径改写成现在的结构（如下），admin下的application的路径配置到admin下
+$system_path = '../../system';  
+$application_folder = '../../application/web';  
+
+（2）增加共用model的路径，这里认为两个application都访问application/web下的model，
+
+在index.php中增加如下代码，由于共用同一套model，所以两个文件中的下面增加的代码都一模一样
+
+$model_folder = '../../application/web';  
+if (is_dir($model_folder)){  
+    define('MODELPATH', $model_folder.'/');  
+}else{  
+    if ( ! is_dir(BASEPATH.$model_folder.'/')){  
+        exit("Your application folder path does not appear to be set correctly. Please open the following file and correct this: ".SELF);  
+    }  
+  
+    define('MODELPATH', BASEPATH.$model_folder.'/');  
+}  
+
+3、改写system中，指向model的路径
+
+找到system/core/Loader.php，将上面那行代码替换成下面那行的代码
+
+// $this->_ci_model_paths = array(APPPATH);  
+$this->_ci_model_paths = array(MODELPATH);  
+
+4、之后其它的model调用和不共用的model一致
+
+$this->load->model('user_model');  
+$login_return = $this->user_model->check_from('web');  
+
+
+以上就是所有共用model的方法

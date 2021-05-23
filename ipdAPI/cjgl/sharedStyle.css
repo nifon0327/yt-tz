@@ -1,0 +1,10 @@
+A:link{COLOR: #FF6633; TEXT-DECORATION: none}
+A:active{COLOR: #FF6633; TEXT-DECORATION: none}
+A:visited{COLOR: #FF6633; TEXT-DECORATION: none}
+A:hover{COLOR: #FF6633}
+select{color: #009900;FONT-SIZE: 16px;}
+.text{color: #999999;FONT-SIZE: 12px;}
+.redB{color: #FF0000;font-weight: bold;}
+.yellowB{color: #FF6633;font-weight: bold;}
+.greenB{color: #009900;font-weight: bold;}
+.blueB{color: #0000CC;font-weight: bold;}

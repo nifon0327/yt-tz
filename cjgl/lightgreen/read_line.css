@@ -1,0 +1,59 @@
+@charset "UTF-8";
+BODY {
+	margin-top: 0px;margin-left: 8px;BACKGROUND-POSITION: center 50%;FONT-FAMILY: "思源黑体";FONT-SIZE: 12px;background-color: #FFFFFF;
+	}
+.{
+	BORDER-BOTTOM: 1px solid;BORDER-top: 1px solid;background-color: #d6efb5;}
+
+.ModelLineColorSet{   
+    border-left: 0px;border-right: 0px;border-bottom: 0px;
+    border-top: 1px solid #339900;}
+.clWinHead {
+	FONT-WEIGHT: normal;FONT-SIZE: 11px;WIDTH: 250px;COLOR: #333333;TOP: 0px;HEIGHT: 14px;
+	border: 1px none #339900;
+	BACKGROUND-COLOR: #d6efb5;
+	}
+/**/
+.divShadow{
+	position:absolute;
+	text-align: center;
+	z-index:2;
+	top: 0px;
+	left:0px;
+	vertical-align: middle;
+	}
+/*背景*/
+#divPageMask{
+	background-color:#000000;position: absolute;z-index:100;width: 100%;height: 100%;top: 0;left: 0;min-height:100%;z-index:1;filter:alpha(opacity=80);
+	}
+.{background-color: #F5F5F5;}
+
+TD{FONT-FAMILY: "思源黑体";FONT-SIZE: 12px;border: none #339900;}
+.A0000{border: none;}
+.A0001{border: none;BORDER-RIGHT:1px solid #e7e7e7;}
+.A0010{border: none;BORDER-LEFT:1px solid #e7e7e7;}
+.A0011{border: none;BORDER-LEFT:1px solid #e7e7e7;BORDER-RIGHT: 1px solid #e7e7e7;}
+.A0100{border: none;BORDER-BOTTOM: 1px solid #e7e7e7;}
+.A0101{border: none;BORDER-BOTTOM: 1px solid #e7e7e7;BORDER-RIGHT: 1px solid #e7e7e7;}
+.A0110{border: none;BORDER-BOTTOM: 1px solid #e7e7e7;BORDER-LEFT:1px solid #e7e7e7;}
+.A0111{border: none;BORDER-BOTTOM: 1px solid #e7e7e7;BORDER-LEFT:1px solid #e7e7e7;BORDER-RIGHT: 1px solid #e7e7e7;}
+.A1000{border: none;BORDER-top: 1px double;}
+.A1001{border: none;BORDER-top: 1px double;BORDER-RIGHT:1px solid #e7e7e7;}
+.A1010{border: none;BORDER-top: 1px solid #e7e7e7;BORDER-LEFT:1px solid #e7e7e7;}
+.A1011{border: none;BORDER-top: 1px double;BORDER-LEFT:1px solid #e7e7e7;BORDER-RIGHT:1px solid #e7e7e7;}
+.A1101{BORDER-BOTTOM: 1px solid #e7e7e7;BORDER-top: 1px solid #e7e7e7;BORDER-LEFT:none;BORDER-RIGHT: 1px solid #e7e7e7;}
+.A1100{border: none;BORDER-BOTTOM: 1px solid #e7e7e7;BORDER-top: 1px solid #e7e7e7;}
+.A1110{border: none;BORDER-BOTTOM: 1px solid #e7e7e7;BORDER-top: 1px solid #e7e7e7;BORDER-LEFT:1px solid #e7e7e7;}
+.A1111{border: 1px solid #e7e7e7;}
+input{color: #009900;FONT-SIZE: 12px; HEIGHT: 12px; }
+input[type=button],input[type=submit],input[type=file]{HEIGHT:auto}
+A:link{COLOR: #FF6633; TEXT-DECORATION: none}
+A:active{COLOR: #FF6633; TEXT-DECORATION: none}
+A:visited{COLOR: #FF6633; TEXT-DECORATION: none}
+A:hover{COLOR: #FF6633}
+select{color: #009900;}
+.text{color: #999999;FONT-SIZE: 12px;}
+.redB{color: #FF0000;font-weight: bold;}
+.yellowB{color: #FF6633;font-weight: bold;}
+.greenB{color: #009900;font-weight: bold;}
+.blueB{color: #0000CC;font-weight: bold;}

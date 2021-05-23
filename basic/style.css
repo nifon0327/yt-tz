@@ -1,0 +1,66 @@
+BODY {
+	SCROLLBAR-FACE-COLOR: #ffffff; SCROLLBAR-HIGHLIGHT-COLOR: #ffffff; SCROLLBAR-SHADOW-COLOR: #ffffff; SCROLLBAR-3DLIGHT-COLOR: #ffffff; SCROLLBAR-ARROW-COLOR: #666666; SCROLLBAR-TRACK-COLOR: #ffffff; SCROLLBAR-DARKSHADOW-COLOR: #ffffff; BACKGROUND-COLOR: #ffffff
+}
+A {
+	FILTER: progid:dximagetransform.microsoft.gradientwipe(duration=1); BEHAVIOR: url(effect.htc); CURSOR: pointer; LINE-HEIGHT: 15pt; LETTER-SPACING: 3pt; HEIGHT: 1px; TEXT-DECORATION: none
+}
+A:link {
+	COLOR: #cccccc
+}
+A:visited {
+	COLOR: #cccccc
+}
+A:active {
+	COLOR: #cccccc
+}
+A:hover {
+	LEFT: 1px; COLOR: #333333; POSITION: relative; TOP: 1px
+}
+BODY {
+	FONT-SIZE: 9pt; COLOR: #666666; LINE-HEIGHT: 170%; LETTER-SPACING: 1.3pt
+}
+TD {
+	FONT-SIZE: 9pt; COLOR: #666666; LINE-HEIGHT: 170%; LETTER-SPACING: 1.3pt
+}
+INPUT {
+	BORDER-RIGHT: #cccccc 1px double; BORDER-TOP: #efefef 1px double; SCROLLBAR-FACE-COLOR: #efefef; FONT-SIZE: 9pt; SCROLLBAR-HIGHLIGHT-COLOR: #efefef; BORDER-LEFT: #efefef 1px double; SCROLLBAR-SHADOW-COLOR: #efefef; COLOR: #999999; SCROLLBAR-3DLIGHT-COLOR: #efefef; SCROLLBAR-ARROW-COLOR: #ffffff; SCROLLBAR-TRACK-COLOR: #efefef; BORDER-BOTTOM: #cccccc 1px double; SCROLLBAR-DARKSHADOW-COLOR: #efefef; BACKGROUND-COLOR: #efefef
+}
+SELECT {
+	BORDER-RIGHT: #cccccc 1px double; BORDER-TOP: #efefef 1px double; SCROLLBAR-FACE-COLOR: #efefef; FONT-SIZE: 9pt; SCROLLBAR-HIGHLIGHT-COLOR: #efefef; BORDER-LEFT: #efefef 1px double; SCROLLBAR-SHADOW-COLOR: #efefef; COLOR: #999999; SCROLLBAR-3DLIGHT-COLOR: #efefef; SCROLLBAR-ARROW-COLOR: #ffffff; SCROLLBAR-TRACK-COLOR: #efefef; BORDER-BOTTOM: #cccccc 1px double; SCROLLBAR-DARKSHADOW-COLOR: #efefef; BACKGROUND-COLOR: #efefef
+}
+TEXTAREA {
+	BORDER-RIGHT: #cccccc 1px double; BORDER-TOP: #efefef 1px double; SCROLLBAR-FACE-COLOR: #efefef; FONT-SIZE: 9pt; SCROLLBAR-HIGHLIGHT-COLOR: #efefef; BORDER-LEFT: #efefef 1px double; SCROLLBAR-SHADOW-COLOR: #efefef; COLOR: #999999; SCROLLBAR-3DLIGHT-COLOR: #efefef; SCROLLBAR-ARROW-COLOR: #ffffff; SCROLLBAR-TRACK-COLOR: #efefef; BORDER-BOTTOM: #cccccc 1px double; SCROLLBAR-DARKSHADOW-COLOR: #efefef; BACKGROUND-COLOR: #efefef
+}
+.table {
+	BORDER-RIGHT: #666666 1px dashed; BORDER-TOP: #666666 1px dashed; BORDER-LEFT: #666666 1px dashed; BORDER-BOTTOM: #666666 1px dashed; BACKGROUND-COLOR: #ffffff
+}
+.menutitle {
+	PADDING-RIGHT: 2pt; PADDING-LEFT: 2pt; MARGIN-BOTTOM: 2pt; PADDING-BOTTOM: 2pt; CURSOR: pointer; COLOR: #666666; PADDING-TOP: 2pt; LETTER-SPACING: 2pt; BACKGROUND-COLOR: #ffffff
+}
+.submenu {
+	MARGIN-BOTTOM: 2pt
+}
+.font1 {
+	COLOR: #a00000; HEIGHT: 25px
+}
+.base {
+	BORDER-RIGHT: #666666 0px dashed; BORDER-TOP: #666666 0px dashed; BORDER-LEFT: #666666 0px dashed; COLOR: #a00000; BORDER-BOTTOM: #666666 1px dashed; HEIGHT: 25px; BACKGROUND-COLOR: #f5f5f5
+}
+.of {
+	FONT-SIZE: 9pt; BACKGROUND-IMAGE: url(bg.gif); MARGIN-LEFT: 10px; LINE-HEIGHT: 170%; LETTER-SPACING: 1.3pt
+}
+.op {
+	BACKGROUND-ATTACHMENT: fixed; BACKGROUND-IMAGE: url(img/style_bg.gif); BACKGROUND-REPEAT: repeat-y
+}
+.he {
+	COLOR: #000000
+}
+.8 {
+	FONT-SIZE: 8pt
+}
+.in {
+	BORDER-RIGHT: #cccccc 1px double; BORDER-TOP: #efefef 1px double; FONT-SIZE: 9pt; BORDER-LEFT: #efefef 1px double; COLOR: #999999; BORDER-BOTTOM: #cccccc 1px double; BACKGROUND-COLOR: #efefef
+}
+.t {
+	FILTER: dropshadow(color=#FFFFFF, offx=1, offy=1)
+}

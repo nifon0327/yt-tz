@@ -1,0 +1,21 @@
+body{font-family:Verdana;font-size:14px;margin:0;height:100%; text-align:center;}
+img{margin-bottom: -10px;margin-top: -10px;}
+#container0{margin:0 auto;padding:20px;width:950px;background-color: #DDDDDD;border: 1px double #666666;top: 50px;display:inline-block; zoom:1; *display:inline; vertical-align:middle;}
+#container1{margin:0 auto; width:100%;background-color: #DDDDDD;}
+#content{float:left; width:695px; height:500px; background:#DDDDDD;}/*因为是固定宽度，采用左右浮动方法可有效避免ie 3像素bug*/
+#TodayLog{float:right;width:200px;height:590px;background: #B8B6B8;}
+#jbr{float:right; height:50px; background:#fff; border: 1px solid #666666;margin-bottom:5px;}
+#jbl{float:left;width:50px;height:50px;background:#fff;margin-bottom:5px;border-top: 1px solid #666666;border-right: none;border-bottom: 1px solid #666666;border-left: 1px solid #666666;font-size: 20px;}
+#rq {float:left;width:100%;height:50px;background:#fff;border-top: 1px solid #666666;border-right: 1px solid #666666;border-bottom: none;border-left: 1px solid #666666;font-size: 30px;line-height:50px;text-align: left;}
+#tq{float:left; width:100%; height:50px; background:#fff;border-top: none;border-right: 1px solid #666666;border-bottom:1px solid #666666;border-left: 1px solid #666666;margin-bottom:5px;}
+#rsr{float:right;height:50px; background:#fff;border: 1px solid #666666;margin-bottom:5px;}
+#main{width:100%;height:300px;background:#fff;border-top: 1px solid #666666;border-right: 1px solid #666666;border-bottom:1px solid #666666;border-left: 1px solid #666666;font-family: Arial, Helvetica, sans-serif;font-size: 150px;font-weight: bold;line-height:300px;}
+#mainInfo{padding-top:0 px;padding-bottom:0px;}
+#Sign{float:left; width:100%; height:80px;background:#fff; float:middle;}
+#SignA{float:left; width:33%; height:80px; background:#fff;border: 1px solid #666666;}
+#SignB{margin:0 30% !important; margin:0 202px; height:80px;background:#fff; border: 1px solid #666666;}
+#SignC{float:right; width:33%; height:80px; background:#fff; border: 1px solid #666666;}
+.hiddenDiv{height:100%; overflow:hidden; display:inline-block; width:1px; overflow:hidden; margin-left:-1px; zoom:1; *display:inline; *margin-top:-1px; _margin-top:0; vertical-align:middle;}
+#TodayLog .content{position: relative;left: -5px;top: -5px;}
+#TodayLog .content {background: #ffffff;border: 1px solid #848284;padding: 12px;width:200px;height:590px;}
+.tdInfo{font-size: 30px;color: #0000FF;text-align: left;}

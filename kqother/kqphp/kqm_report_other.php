@@ -1,0 +1,21 @@
+<?php 
+//电信-EWEN
+	//是否没入职
+	/*
+	if($toDay<$ComeIn){//否
+		//则
+		if($today_GTime!=0){
+			if($today_WorkTime!=0){
+				$Sum_WorkTime=$Sum_WorkTime-$today_WorkTime;
+				}
+			$today_WorkTime=0;
+			$today_WXTime=8;
+			$Sum_BKTime=$today_BKTime==0?$Sum_BKTime:$Sum_BKTime-$today_BKTime;
+			$today_KGTime=0;
+			$today_BKTime=0;
+			$Sum_WXTime=$Sum_WXTime+$today_WXTime;
+			$Sing_Y="&nbsp;";
+			}
+		}
+		*/
+?>

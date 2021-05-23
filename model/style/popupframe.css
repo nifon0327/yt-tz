@@ -1,0 +1,16 @@
+.moveLtoR{ filter:revealTrans(Transition=6,Duration=0.3)}
+.moveRtoL{ filter:revealTrans(Transition=7,Duration=0.3)}
+
+/* 为 DIV 加阴影 */ 
+.out {position:relative;background:#006633;margin:10px auto;width:400px;}
+
+.in {background:#FFFFE6;border:1px solid #555;padding:10px 5px;position:relative;top:-5px;left:-5px;}  
+
+/* 为 图片 加阴影 */ 
+.imgShadow {position:relative;     background:#bbb;      margin:10px auto;     width:220px; } 
+
+.imgContainer {position:relative;      top:-5px;     left:-5px;     background:#fff;      border:1px solid #555;     padding:0;} 
+
+.imgContainer img {     display:block; } 
+
+.glow1 { filter:glow(color=#FF0000,strengh=2)}

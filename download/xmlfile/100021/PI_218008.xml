@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PI>
+  <Product>
+    <Ln.>1</Ln.>
+    <PO>J100022/A-1#-1</PO>
+    <ProductCode>1#-1-PCDJ-01-01</ProductCode>
+    <UnitPrice>0.000</UnitPrice>
+    <Qty>1</Qty>
+    <Amount>0.00</Amount>
+    <Leadtime>Week 07</Leadtime>
+  </Product>
+  <Product>
+    <Ln.>2</Ln.>
+    <PO>J100022/A-1#-1</PO>
+    <ProductCode>1#-1-PCDJ-01-02</ProductCode>
+    <UnitPrice>0.000</UnitPrice>
+    <Qty>1</Qty>
+    <Amount>0.00</Amount>
+    <Leadtime>Week 07</Leadtime>
+  </Product>
+  <Product>
+    <Ln.>3</Ln.>
+    <PO>J100022/A-1#-1</PO>
+    <ProductCode>1#-1-PCDJ-01-03</ProductCode>
+    <UnitPrice>0.000</UnitPrice>
+    <Qty>1</Qty>
+    <Amount>0.00</Amount>
+    <Leadtime>Week 07</Leadtime>
+  </Product>
+  <Product>
+    <Ln.>4</Ln.>
+    <PO>J100022/A-1#-1</PO>
+    <ProductCode>1#-1-PCDJ-01-04</ProductCode>
+    <UnitPrice>0.000</UnitPrice>
+    <Qty>1</Qty>
+    <Amount>0.00</Amount>
+    <Leadtime>Week 07</Leadtime>
+  </Product>
+  <Product>
+    <Ln.>5</Ln.>
+    <PO>J100022/A-1#-1</PO>
+    <ProductCode>1#-1-PCDJ-02-01</ProductCode>
+    <UnitPrice>0.000</UnitPrice>
+    <Qty>1</Qty>
+    <Amount>0.00</Amount>
+    <Leadtime>Week 07</Leadtime>
+  </Product>
+  <Product>
+    <Ln.>6</Ln.>
+    <PO>J100022/A-1#-1</PO>
+    <ProductCode>1#-1-PCDJ-02-02</ProductCode>
+    <UnitPrice>0.000</UnitPrice>
+    <Qty>1</Qty>
+    <Amount>0.00</Amount>
+    <Leadtime>Week 07</Leadtime>
+  </Product>
+  <Product>
+    <Ln.>7</Ln.>
+    <PO>J100022/A-1#-1</PO>
+    <ProductCode>1#-1-PCDJ-03-01</ProductCode>
+    <UnitPrice>0.000</UnitPrice>
+    <Qty>1</Qty>
+    <Amount>0.00</Amount>
+    <Leadtime>Week 07</Leadtime>
+  </Product>
+  <Product>
+    <Ln.>8</Ln.>
+    <PO>J100022/A-1#-1</PO>
+    <ProductCode>1#-1-PCDJ-04-01</ProductCode>
+    <UnitPrice>0.000</UnitPrice>
+    <Qty>1</Qty>
+    <Amount>0.00</Amount>
+    <Leadtime>Week 07</Leadtime>
+  </Product>
+  <Product>
+    <Ln.>9</Ln.>
+    <PO>J100022/A-1#-1</PO>
+    <ProductCode>1#-1-PCB-02-01</ProductCode>
+    <UnitPrice>0.000</UnitPrice>
+    <Qty>1</Qty>
+    <Amount>0.00</Amount>
+    <Leadtime>Week 07</Leadtime>
+  </Product>
+  <Product>
+    <Ln.>10</Ln.>
+    <PO>J100022/A-1#-1</PO>
+    <ProductCode>1#-1-PCB-01-04</ProductCode>
+    <UnitPrice>0.000</UnitPrice>
+    <Qty>1</Qty>
+    <Amount>0.00</Amount>
+    <Leadtime>Week 10</Leadtime>
+  </Product>
+  <Product>
+    <Ln.>11</Ln.>
+    <PO>J100022/A-1#-1</PO>
+    <ProductCode>1#-1-PCB-01-05</ProductCode>
+    <UnitPrice>0.000</UnitPrice>
+    <Qty>1</Qty>
+    <Amount>0.00</Amount>
+    <Leadtime>Week 07</Leadtime>
+  </Product>
+  <Product>
+    <Ln.>12</Ln.>
+    <PO>J100022/A-1#-1</PO>
+    <ProductCode>1#-1-PCB-01-01</ProductCode>
+    <UnitPrice>0.000</UnitPrice>
+    <Qty>1</Qty>
+    <Amount>0.00</Amount>
+    <Leadtime>Week 07</Leadtime>
+  </Product>
+  <Product>
+    <Ln.>13</Ln.>
+    <PO>J100022/A-1#-1</PO>
+    <ProductCode>1#-1-PCB-01-03</ProductCode>
+    <UnitPrice>0.000</UnitPrice>
+    <Qty>1</Qty>
+    <Amount>0.00</Amount>
+    <Leadtime>Week 07</Leadtime>
+  </Product>
+  <Product>
+    <Ln.>14</Ln.>
+    <PO>J100022/A-1#-1</PO>
+    <ProductCode>1#-1-01-PCB-02-01</ProductCode>
+    <UnitPrice>0.000</UnitPrice>
+    <Qty>1</Qty>
+    <Amount>0.00</Amount>
+    <Leadtime>Week 07</Leadtime>
+  </Product>
+  <Product>
+    <Ln.>15</Ln.>
+    <PO>J100022/A-1#-1</PO>
+    <ProductCode>1#-1-01-PCB-04-01</ProductCode>
+    <UnitPrice>0.000</UnitPrice>
+    <Qty>1</Qty>
+    <Amount>0.00</Amount>
+    <Leadtime>Week 07</Leadtime>
+  </Product>
+  <Product>
+    <Ln.>16</Ln.>
+    <PO>J100022/A-1#-1</PO>
+    <ProductCode>1#-1-01-PCB-05-01</ProductCode>
+    <UnitPrice>0.000</UnitPrice>
+    <Qty>1</Qty>
+    <Amount>0.00</Amount>
+    <Leadtime>Week 07</Leadtime>
+  </Product>
+  <Product>
+    <Ln.>17</Ln.>
+    <PO>J100022/A-1#-1</PO>
+    <ProductCode>1#-1-01-PCB-05-02</ProductCode>
+    <UnitPrice>0.000</UnitPrice>
+    <Qty>1</Qty>
+    <Amount>0.00</Amount>
+    <Leadtime>Week 07</Leadtime>
+  </Product>
+  <Product>
+    <Ln.>18</Ln.>
+    <PO>J100022/A-1#-1</PO>
+    <ProductCode>1#-1-02-PCB-01-01</ProductCode>
+    <UnitPrice>0.000</UnitPrice>
+    <Qty>1</Qty>
+    <Amount>0.00</Amount>
+    <Leadtime>Week 07</Leadtime>
+  </Product>
+  <Product>
+    <Ln.>19</Ln.>
+    <PO>J100022/A-1#-1</PO>
+    <ProductCode>1#-1-02-PCB-02-01</ProductCode>
+    <UnitPrice>0.000</UnitPrice>
+    <Qty>1</Qty>
+    <Amount>0.00</Amount>
+    <Leadtime>Week 07</Leadtime>
+  </Product>
+  <Product>
+    <Ln.>20</Ln.>
+    <PO>J100022/A-1#-1</PO>
+    <ProductCode>1#-1-02-PCB-02-02</ProductCode>
+    <UnitPrice>0.000</UnitPrice>
+    <Qty>1</Qty>
+    <Amount>0.00</Amount>
+    <Leadtime>Week 07</Leadtime>
+  </Product>
+  <Product>
+    <Ln.>21</Ln.>
+    <PO>J100022/A-1#-1</PO>
+    <ProductCode>1#-1-02-PCB-03-01</ProductCode>
+    <UnitPrice>0.000</UnitPrice>
+    <Qty>1</Qty>
+    <Amount>0.00</Amount>
+    <Leadtime>Week 07</Leadtime>
+  </Product>
+  <Product>
+    <Ln.>22</Ln.>
+    <PO>J100022/A-1#-1</PO>
+    <ProductCode>1#-1-RF-PCB-02-01</ProductCode>
+    <UnitPrice>0.000</UnitPrice>
+    <Qty>1</Qty>
+    <Amount>0.00</Amount>
+    <Leadtime>Week 07</Leadtime>
+  </Product>
+  <Product>
+    <Ln.>23</Ln.>
+    <PO>J100022/A-1#-1</PO>
+    <ProductCode>1#-1-1F-PCL-01-01</ProductCode>
+    <UnitPrice>0.000</UnitPrice>
+    <Qty>1</Qty>
+    <Amount>0.00</Amount>
+    <Leadtime>Week 07</Leadtime>
+  </Product>
+  <Product>
+    <Ln.>24</Ln.>
+    <PO>J100022/A-1#-1</PO>
+    <ProductCode>1#-1-1F-PCL-01-02</ProductCode>
+    <UnitPrice>0.000</UnitPrice>
+    <Qty>1</Qty>
+    <Amount>0.00</Amount>
+    <Leadtime>Week 07</Leadtime>
+  </Product>
+  <Product>
+    <Ln.>25</Ln.>
+    <PO>J100022/A-1#-1</PO>
+    <ProductCode>1#-1-1F-PCL-01-03</ProductCode>
+    <UnitPrice>0.000</UnitPrice>
+    <Qty>1</Qty>
+    <Amount>0.00</Amount>
+    <Leadtime>Week 07</Leadtime>
+  </Product>
+  <Product>
+    <Ln.>26</Ln.>
+    <PO>J100022/A-1#-1</PO>
+    <ProductCode>1#-1-1F-PCL-02-01</ProductCode>
+    <UnitPrice>0.000</UnitPrice>
+    <Qty>1</Qty>
+    <Amount>0.00</Amount>
+    <Leadtime>Week 07</Leadtime>
+  </Product>
+  <Product>
+    <Ln.>27</Ln.>
+    <PO>J100022/A-1#-1</PO>
+    <ProductCode>1#-1-1F-PCL-02-02</ProductCode>
+    <UnitPrice>0.000</UnitPrice>
+    <Qty>1</Qty>
+    <Amount>0.00</Amount>
+    <Leadtime>Week 07</Leadtime>
+  </Product>
+  <Product>
+    <Ln.>28</Ln.>
+    <PO>J100022/A-1#-1</PO>
+    <ProductCode>1#-1-1F-PCL-03-01</ProductCode>
+    <UnitPrice>0.000</UnitPrice>
+    <Qty>1</Qty>
+    <Amount>0.00</Amount>
+    <Leadtime>Week 07</Leadtime>
+  </Product>
+  <Product>
+    <Ln.>29</Ln.>
+    <PO>J100022/A-1#-1</PO>
+    <ProductCode>1#-1-1F-PCL-04-01</ProductCode>
+    <UnitPrice>0.000</UnitPrice>
+    <Qty>1</Qty>
+    <Amount>0.00</Amount>
+    <Leadtime>Week 07</Leadtime>
+  </Product>
+  <Product>
+    <Ln.>30</Ln.>
+    <PO>J100022/A-1#-1</PO>
+    <ProductCode>1#-1-1F-PCL-04-02</ProductCode>
+    <UnitPrice>0.000</UnitPrice>
+    <Qty>1</Qty>
+    <Amount>0.00</Amount>
+    <Leadtime>Week 07</Leadtime>
+  </Product>
+  <Product>
+    <Ln.>31</Ln.>
+    <PO>J100022/A-1#-1</PO>
+    <ProductCode>1#-1-1F-PCL-04-03</ProductCode>
+    <UnitPrice>0.000</UnitPrice>
+    <Qty>1</Qty>
+    <Amount>0.00</Amount>
+    <Leadtime>Week 07</Leadtime>
+  </Product>
+  <Product>
+    <Ln.>32</Ln.>
+    <PO>J100022/A-1#-1</PO>
+    <ProductCode>1#-1-1F-PCL-04-05</ProductCode>
+    <UnitPrice>0.000</UnitPrice>
+    <Qty>1</Qty>
+    <Amount>0.00</Amount>
+    <Leadtime>Week 07</Leadtime>
+  </Product>
+  <Product>
+    <Ln.>33</Ln.>
+    <PO>J100022/A-1#-1</PO>
+    <ProductCode>1#-1-1F-PCL-04-04</ProductCode>
+    <UnitPrice>0.000</UnitPrice>
+    <Qty>1</Qty>
+    <Amount>0.00</Amount>
+    <Leadtime>Week 07</Leadtime>
+  </Product>
+  <Product>
+    <Ln.>34</Ln.>
+    <PO>J100022/A-1#-1</PO>
+    <ProductCode>1#-1-1F-PCL-05-01</ProductCode>
+    <UnitPrice>0.000</UnitPrice>
+    <Qty>1</Qty>
+    <Amount>0.00</Amount>
+    <Leadtime>Week 07</Leadtime>
+  </Product>
+  <Product>
+    <Ln.>35</Ln.>
+    <PO>J100022/A-1#-1</PO>
+    <ProductCode>1#-1-PCLT01-01</ProductCode>
+    <UnitPrice>0.000</UnitPrice>
+    <Qty>1</Qty>
+    <Amount>0.00</Amount>
+    <Leadtime>Week 07</Leadtime>
+  </Product>
+</PI>

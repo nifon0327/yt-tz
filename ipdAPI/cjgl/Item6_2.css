@@ -1,0 +1,74 @@
+*
+{
+	margin: 0px;
+	padding: 0px;
+}
+
+td
+{
+	text-align: -webkit-center;
+	border: 1px solid black;
+	height: 30px;
+}
+
+#titleTable
+{	
+	width: 100%;
+	height: 5%;
+	font-size: 13px;
+	border-collapse: collapse;
+	position:fixed;
+	left: 0px;
+	top:30px;
+	z-index: 20;
+}
+
+#titleTool
+{
+	width: 100%;
+	height: 30px;
+	position: fixed;
+	background-color: white;
+	z-index: 19;
+}
+
+#titleTable tr
+{
+	background-color: white;
+}
+
+#dataDiv
+{
+	float: left;
+}
+
+#dataTable
+{
+	border-collapse: collapse;
+	width: 100%;
+	font-size: 13px;
+	position: absolute;
+	top:64px;
+}
+
+#ShipEstate
+{
+	height: 20px;
+	font-size: 12px;
+	position: relative;
+	top:5px;
+	left:5px;
+}
+
+#chooseDate
+{
+	position: relative;
+	top: 5px;
+	left: 15px;
+}
+
+.dateSelectStyle
+{
+	
+}
+

@@ -1,0 +1,1 @@
+<?php $OutputInfo.="<li class=TitleBL>损益表</li><li class=TitleBR><span class='yellowN'><a href='../syb/desk_pandl.php' target='_blank' style='CURSOR: pointer;color:#FF6633'>(¥8,112)</a></span></li>";?>

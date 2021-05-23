@@ -1,0 +1,325 @@
+﻿ /*定义字体*/
+  @font-face { 
+        font-family:AshCloud8; src:url('../font/AshCloud8.ttf');
+  }
+  
+  @font-face { 
+        font-family:VAGRoundedStd-Bold; src:url('../font/VAGRoundedStd-Bold.otf');   
+  }
+
+  @font-face { 
+        font-family:HelveticaNeueLTStd-Cn; src:url('../font/HelveticaNeueLTStd-Cn.ttf');   
+  }
+
+  @font-face { 
+        font-family:helveticaneue-light; src:url('../font/helveticaneue-light.otf');   
+  }
+
+  @font-face { 
+        font-family:PingFang_Medium; src:url('../font/PingFang_Medium.ttf');   
+  }
+
+  @font-face { 
+        font-family:PingFang_Regular; src:url('../font/PingFang_Regular.ttf');  
+  }
+  
+  @font-face { 
+        font-family:PingFang_Light; src:url('../font/PingFang_Light.ttf');   
+  }
+
+  @font-face { 
+        font-family:PingFang_Bold; src:url('../font/PingFang_Bold.ttf');  
+  }
+
+  @font-face { 
+        font-family:AshCloud61; src:url('../font/AshCloud61.ttf');  
+  }
+
+   @font-face { 
+        font-family: NotoSansHans-Light; src:url('../font/NotoSansHans-Light.otf');  
+  }
+
+.tv_green{
+	color:#01be56;
+}
+
+.alignR {
+	float:right;
+	vertical-align: middle;
+	margin-top: 10px;
+}
+
+.alignC {
+	
+	text-align:center;
+	margin-right: 10pt;
+}
+
+.topFontB {
+	font-size: 70px;
+	color: #fd3131;
+	font-family: "PingFang_Regular";
+}
+
+.topFontS {
+	font-size: 70px;
+	color: #848888;
+	font-family: "PingFang_Regular";
+}
+
+.nomargin {
+	margin-top: 0pt;
+	margin-left: 0pt;
+}
+.wrapcz {
+	margin-top: 100pt;
+	margin-left: 10pt;
+}
+
+.margin10 {
+	margin-top: 5pt;
+	margin-left: 10pt;
+}
+
+.fontBlack34 {
+	font-size: 34px;
+	color: #000000;
+	font-family: "PingFang_Regular";
+}
+
+.fontBlack40 {
+	font-size: 40px;
+	color: #000000;
+	font-family: "PingFang_Regular";
+}
+
+.fontBlack45 {
+	font-size: 45px;
+	color: #000000;
+	font-family: "PingFang_Regular";
+}
+
+.fontRed40 {
+	font-size: 40px;
+	color: #fd3131;
+	font-family: "PingFang_Regular";
+}
+.fontRed30 {
+	font-size: 30px;
+	color: #fd3131;
+	font-family: "PingFang_Regular";
+}
+
+.fontRed33 {
+	font-size: 33px;
+	color: #fd3131;
+	font-family: "PingFang_Regular";
+}
+
+.fontRed45 {
+	font-size: 45px;
+	color: #fd3131;
+	font-family: "PingFang_Regular";
+}
+
+.fontBlack32 {
+	font-size: 32px;
+	color: #000000;
+	font-family: "PingFang_Regular";
+}
+
+.fontBlack30 {
+	font-size: 32px;
+	color: #000000;
+	font-family: "PingFang_Regular";
+}
+
+.fontBlue32 {
+	font-size: 32px;
+	color: #358fc1;
+	font-family: "PingFang_Regular";
+}
+
+.fontGray30 {
+	font-size: 30px;
+	color: #848888;
+	font-family: "PingFang_Regular";
+}
+
+.fontGray32 {
+	font-size: 32px;
+	color: #848888;
+	font-family: "PingFang_Regular";
+}
+
+.fontGray28 {
+	font-size: 28px;
+	color: #848888;
+	font-family: "PingFang_Regular";
+}
+
+.fontGray25 {
+	font-size: 25px;
+	color: #848888;
+	font-family: "PingFang_Regular";
+}
+
+.fontGray65 {
+	font-size: 65px;
+	color: #848888;
+	font-family: "PingFang_Regular";
+}
+
+.fontWhite25 {
+	font-size: 22px;
+	color: #ffffff;
+	font-family: "PingFang_Regular";
+}
+
+.fontGreen30 {
+	font-size: 33px;
+	color: #01be56;
+	font-family: "PingFang_Regular";
+}
+
+.fontGreen33 {
+	font-size: 33px;
+	color: #01be56;
+	font-family: "PingFang_Regular";
+}
+
+.fontGreen65 {
+	font-size: 65px;
+	color: #01be56;
+	font-family: "PingFang_Regular";
+}
+
+.fontGreen70 {
+	font-size: 70px;
+	color: #01be56;
+	font-family: "PingFang_Regular";
+}
+
+.fontGreenB70 {
+	font-size: 70px;
+	color: #109f28;
+	font-family: "PingFang_Regular";
+}
+
+.fontRed50 {
+	font-size: 50px;
+	color: #fd3131;
+	font-family: "PingFang_Regular";
+}
+
+.fontRed32 {
+	font-size: 32px;
+	color: #fd3131;
+	font-family: "PingFang_Regular";
+}
+
+.week div{
+	display:inline-block;
+	margin-left:2px; 
+	width: 50px;height: 80px;
+	line-height: 80px;
+	vertical-align: middle;
+	-webkit-transform: skew(-3deg);  
+	-moz-transform: skew(-3deg); 
+	-o-transform: skew(-3deg);
+	font-family: "AshCloud8";
+	font-size: 45pt;
+	text-align: center;
+	color: #FFFFFF;
+}
+
+.week3 div{
+   display:inline-block;
+   margin-left:2px; 
+   margin-top:1px; 
+   margin-bottom: 3px;
+   width: 22px;height: 36px;
+   line-height: 36px;
+   vertical-align: middle;
+   -webkit-transform: skew(-3deg);  
+   -moz-transform: skew(-3deg); 
+   -o-transform: skew(-3deg);
+   
+	font-family: "AshCloud8";
+	font-size: 30px;
+	text-align: center;
+	color: #FFFFFF;
+}
+
+.bgcolor_red div{
+    background: #FF0000;
+}
+
+.bgcolor_black div{
+	background: #000000;
+}
+
+.bgcolor_blue div{
+	background: #71bede;
+}
+
+.innerIcon
+{
+	width: 26px;
+	height: 26px;
+	margin-top: 0px;
+	margin-left: 6px;
+	border-radius: 13px;
+	text-align: center;
+    font-size: 16px;
+	font-family: 'PingFang_Regular';
+	text-align:center;
+	line-height: 27px;
+	vertical-align: middle;
+}
+
+@-webkit-keyframes twinkling{ /*透明度由0到1*/
+
+0%{
+
+opacity:1; /*透明度为1*/
+
+}
+50%{
+
+opacity:0.2; /*透明度为0*/
+
+}
+
+100%{
+
+opacity:1; /*透明度为1*/
+
+}
+
+}
+
+
+@-webkit-keyframes twinklingS{ /*透明度由0到1*/
+
+0%{
+
+opacity:1; /*透明度为1*/
+
+}
+50%{
+
+opacity:0; /*透明度为0*/
+
+}
+
+100%{
+
+opacity:1; /*透明度为1*/
+
+}
+
+}
+
+
+

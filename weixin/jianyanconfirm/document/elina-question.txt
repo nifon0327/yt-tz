@@ -1,0 +1,44 @@
+1. confirm - 新建记录总是返回 "insert failed 记录编号创建失败！"
+传参示例
+{
+    action: confirm
+    recordNumber: 20192222
+    item: 木桌
+    productionLine: 101
+}
+
+2. productionAdd 接口
+    a. 还需要构件名搜索 field
+    b. 返回的l list 总为空
+
+    eg. 传参示例：
+    {
+        action: productionAdd
+        id: 5
+        itemId: 34
+        buildingId: ""
+        floorId: ""
+        typeId: ""
+    }
+    返回：
+    {
+        msg: "成功"
+        result: null
+        status: 1
+    }
+
+    或者传参：
+    {
+        action: productionAdd
+        id: 5
+        itemId: 34
+        buildingId: 17
+        floorId: 24
+        typeId: 8010
+    }
+    返回：
+    {
+        msg: "成功"
+        result: null
+        status: 1
+    }

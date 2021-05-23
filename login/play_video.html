@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>video play</title>
+</head>
+<body>
+<center>
+<section id="player">
+  <video id="media" width="80%" height="80%" controls> 
+  </video> 
+</section>
+<center>
+</body>
+</html>
+
+<script>
+	var vList = ['http://116.6.107.226:8060/download/video/video_7.mov', 'http://116.6.107.226:8060/download/video/video_9.mov']; // 初始化播放列表
+	var vLen = vList.length; // 播放列表的长度
+	
+	var curr = 0; // 当前播放的视频
+	var video = document.getElementById('media');
+    
+    setInterval("checkplay()",1000);
+	  
+    function checkplay(){
+	    if (video.ended || video.src.length==0){
+		    play();
+	    }
+    }
+    
+	function play() {
+	   video.src = vList[curr];
+	   //video.load(); // 如果短的话，可以加载完成之后再播放，监听 canplaythrough 事件即可
+	   video.play();
+	   //alert(video.src);
+	
+	   curr++;
+	   if (curr >= vLen) curr = 0; // 播放完了，重新播放
+	   }
+</script>

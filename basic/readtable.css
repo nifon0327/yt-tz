@@ -1,0 +1,6 @@
+/* CSS Document */
+.Css_DropShadow {
+	filter: DropShadow(Color=#FFFFFF, OffX=1, OffY=1, Positive=1);
+	font-family: "思源黑体";
+	font-size: 12px;
+}

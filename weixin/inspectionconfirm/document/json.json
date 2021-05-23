@@ -1,0 +1,67 @@
+---构建记录新增接口---
+action: createInspectionRecord
+recordNo: 1223132
+recordName: testRecord
+status: 0  （0 生产中   1 成品）
+workShopId: 101
+{
+"status": 0,
+"result": [
+{
+"Id": "11"
+},
+{
+"exist": 0
+}
+],
+"msg": "\u6210\u529f"
+}
+或者
+{
+"status": 0,
+"result": [
+{
+"Id": "11"
+},
+{
+"exist": 1
+}
+],
+"msg": "\u6210\u529f"
+}
+
+
+//-----查询构件()-----
+//添加构建列表查询专用
+action: searchProducts
+
+status: 0 //0生产过程中
+workshopId: 103  //生产线id
+tradeId: 41  //公司ID
+buildingNo: 0 //楼栋编号
+floorNo:  //层数
+type: //类型
+productCode: //构件编号
+{
+"status": 0, "result":[{"ProductId": "60932", "Forshort": "G79", "cName": "7-10-APCLT1R-18"}, {"ProductId": "60965", "Forshort": "G79", "cName": "7-10-APCLT1L-51"}, {"ProductId": "60966", "Forshort": "G79", "cName": "7-10-APCLT1L-52"}, {"ProductId": "59247", "Forshort": "G79", "cName": "3-18-APCLT4R-67"}, {"ProductId": "59248", "Forshort": "G79", "cName": "3-18-APCLT4R-68"},{"ProductId": "59282", "Forshort": "G79", "cName": "3-18-APCLT4L-102"}, {"ProductId": "58345", "Forshort": "G79", "cName": "1-16-APCLT3R-83"}, {"ProductId": "60997", "Forshort": "G79", "cName": "7-16-APCLT3R-83"}, {"ProductId": "61015", "Forshort": "G79", "cName": "7-17-APCLT3L-101"}, {"ProductId": "58364", "Forshort": "G79", "cName": "1-18-APCLT3L-102"},{"ProductId": "61016", "Forshort": "G79", "cName": "7-18-APCLT3L-102"}], "msg": "\u6210\u529f"
+}
+
+//------获取质检记录 for pc---
+
+/**   入参
+* 根据入参查询构件质检记录
+* @param $date       date
+* @param $workshopId       产线ID
+* @param $tradeId          公司ID
+* @param $buildingNo       楼栋编号
+* @param $floorNo          层数
+* @param $type             类型
+* @param $productCode      构件编号
+* @param $status           0生产过程中   1成品
+* @return array|null
+*/
+"action":"searchInspectionRecord",
+"tradeId":39,
+"status":1
+
+{"status":0,"result":[{"ProductId":"43660","Forshort":"\u5357\u4eac\u4e0a\u574a\u91d1\u8302","EState":"0","cName":"3-15-YLB-A-6R-422","Id":"20","RecordNo":"2019021402","RecordName":"\u7b14\u8bb0\u672c","WorkShopId":"104","Created":"2019-02-15 23:46:19","Creator":"op_TywzYDwG4walmycIBLQWKdEn8","Modified":"2019-02-15 23:46:19","Modifier":null,"Status":"1","threadName":"PC-4","uName":"zhangzy","userId":"1083"},{"ProductId":"43687","Forshort":"\u5357\u4eac\u4e0a\u574a\u91d1\u8302","EState":"0","cName":"3-15-YLB-A-4cR-449","Id":"20","RecordNo":"2019021402","RecordName":"\u7b14\u8bb0\u672c","WorkShopId":"104","Created":"2019-02-15 23:46:19","Creator":"op_TywzYDwG4walmycIBLQWKdEn8","Modified":"2019-02-15 23:46:19","Modifier":null,"Status":"1","threadName":"PC-4","uName":"zhangzy","userId":"1083"},{"ProductId":"43711","Forshort":"\u5357\u4eac\u4e0a\u574a\u91d1\u8302","EState":"0","cName":"3-15-YLB-A-4bR-473","Id":"20","RecordNo":"2019021402","RecordName":"\u7b14\u8bb0\u672c","WorkShopId":"104","Created":"2019-02-15 23:46:19","Creator":"op_TywzYDwG4walmycIBLQWKdEn8","Modified":"2019-02-15 23:46:19","Modifier":null,"Status":"1","threadName":"PC-4","uName":"zhangzy","userId":"1083"}],"msg":"\u6210\u529f"}

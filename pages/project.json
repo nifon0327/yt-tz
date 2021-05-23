@@ -1,0 +1,4 @@
+{
+    "common": "/function/Controller/CommonController.php",
+    "productMaintenance": "/function/Controller/ProductMaintenanceController.php"
+}

@@ -1,0 +1,57 @@
+*
+{
+	margin: 0px;
+	padding: 0px;
+}
+
+#titleTable
+{
+	width: 100%;
+	border: 1px solid black;
+	font-size: 14px;
+	border-collapse: collapse;
+	text-align: center;
+	position: fixed;
+	top: 30px;
+	background-color: white;
+	word-break: break-word;
+	z-index: 200;
+}
+
+#titleTable td
+{
+	border: 1px solid black;
+}
+
+#ListTable
+{
+	width: 100%;
+	font-size: 14px;
+	border: 1px black solid;
+	border-collapse: collapse;
+	text-align: center;
+	word-break: break-word;
+	position: absolute;
+	top:49px;
+}
+
+#ListTable td
+{
+	border: 1px solid black;
+	height: 50px;
+}
+
+#infoSelect
+{
+	width: 100%;
+	text-align: -webkit-right;
+	background-color: #dedede;
+	position: fixed;
+	height: 30px;
+	z-index: 199;
+}
+
+.acessoryStyle
+{
+	 margin-left: 40px;
+}

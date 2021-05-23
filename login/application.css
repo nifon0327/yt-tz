@@ -1,0 +1,115 @@
+@charset "UTF-8";
+*{margin:0;padding:0;}
+
+@font-face { 
+      font-family:Roboto-Light; src:url('fonts/Roboto-Light.ttf');
+}
+
+@font-face { 
+      font-family:Roboto-Medium; src:url('fonts/Roboto-Medium.ttf');
+}
+
+@font-face { 
+      font-family:Roboto-Regular; src:url('fonts/Roboto-Regular.ttf');
+}
+
+@font-face { 
+      font-family:Roboto-Italic; src:url('fonts/Roboto-Italic.ttf');
+}
+  
+
+html{min-width:768px;}
+
+
+body {
+    background: url(../login/images/bg.png);
+    background-size: cover;
+    text-align: center;
+	
+}
+
+@media screen  and (max-width:1024px){
+body {
+	  margin:0 0 0 0; 
+	
+	}
+}
+.login-wrap {
+	position: fixed;
+    top: 40%;
+    left: 50%;
+    margin: -189px auto auto -200px;
+    width: 400px;
+    text-align: center;
+    background: url(../login/images/logo.png);
+	background-position: top center;
+	background-repeat: no-repeat;
+    overflow: hidden;
+}
+.login-field{
+	margin-top: 180px 
+}
+.login-box{	
+	margin: 18px auto
+}
+.login-box input{
+	width: 300px;
+    height: 40px;
+	padding: 0 10px;
+	border-radius: 2px;
+    line-height: 30px;
+    outline: none;
+    font-size: 16px;
+    border: none;
+    background: rgb(50, 165, 181);
+	color: rgb(173,213,220)
+}
+.login-box input:-webkit-autofill{
+	-webkit-text-fill-color: rgb(173,213,220) !important;
+	-webkit-box-shadow: 0 0 0 1000px rgb(50, 165, 181) inset !important;
+}
+::-webkit-input-placeholder {
+	color: rgb(173,213,220) 
+}
+.login-field div:last-child{
+	margin-top:60px;
+}
+.login-button{
+	background: white;
+	color: rgb(72, 187, 203);
+	width: 320px;
+	height: 40px;
+	cursor: pointer;
+	font-size: 16px;
+	border: none;
+	border-radius: 2px;
+}
+.login-button:hover{
+	background: rgb(173,213,220);
+}
+.login-footer{
+	position: fixed;
+    bottom: 40px;
+	width: 100%;
+	color: white;
+}
+.login-footer a{
+	display: inline-block;
+	width: 89px;
+	height: 14px;
+	line-height: 14px;
+	border-right: 1px solid white;
+	font-size: 14px;
+	color: white;
+	text-decoration: none
+}
+.login-footer a:hover{
+	color: rgb(173,213,220)
+}
+.login-footer a:last-child{
+	border: none
+}
+.login-footer p{
+	margin-top: 16px;
+	font-size: 12px;
+}

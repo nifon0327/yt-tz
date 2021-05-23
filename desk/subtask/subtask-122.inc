@@ -1,0 +1,1 @@
+<?php $OutputInfo.="<li class=TitleBL>未收</li><li class=TitleBR><a href='../desktask/desk_clientfkcount_read.php' target='_blank' style='CURSOR: pointer;color:#FF6633'>¥0</a></li><li class=DataA>$0</li><li class=DataA>¥0</li><li class=TitleBL>结余</li><li class=TitleBR><span style='CURSOR: pointer;color:#FF6633'>(¥8,112)</span></li>";?>

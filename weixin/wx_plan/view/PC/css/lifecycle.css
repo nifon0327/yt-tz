@@ -1,0 +1,166 @@
+body.goyeer{
+    background-color: #F5F5F5;padding: 0px;margin: 0px;
+}
+
+body.goyeer .row{display: 0px; padding: 0px;margin: 0px;}
+.col-01,.col-02,.col-03,.col-04,.col-05,.col-06,.col-07,.col-08,.col-09,.col-10,.col-11,.col-12{
+    display: block;overflow: hidden;position: relative;float: left;
+}
+body.goyeer .bg-white{background-color: #ffffff;}
+.col-12 {
+    width: 100%;
+  }
+  .col-11 {
+    width: 91.66666667%;
+  }
+  .col-10 {
+    width: 83.33333333%;
+  }
+  .col-09 {
+    width: 75%;
+  }
+  .col-08 {
+    width: 66.66666667%;
+  }
+  .col-07 {
+    width: 58.33333333%;
+  }
+  .col-06 {
+    width: 50%;
+  }
+  .col-05 { width: 41.66666667%;}
+  .col-04 { width: 33.33333333%;}
+  .col-03 {width: 25%;}
+  .col-02 {width: 16.66666667%;}
+  .col-01 {width: 8.33333333%;}
+body.goyeer .search{display: block;overflow: hidden;}
+body.goyeer .search dl,body.goyeer .search dl dt,body.goyeer .search dl dd{display: block;overflow: hidden;float: left;}
+body.goyeer .search dl dt,body.goyeer .search dl dd{font-size: 13px;}
+body.goyeer .search dl dd{padding-right: 20px;padding-left: 0px;}
+body.goyeer .search dl dd em{display:inline-block;padding:8px 5px 2px 5px;margin-bottom: 5px; font-size: 13px;
+          border-bottom:#d4dcda solid 1px; font-style: normal; color: #43676b; }
+body.goyeer .search dl dd.inner-col{padding-top: 5px;}
+body.goyeer .search dl dt{padding: 8px 5px;}
+body.goyeer .panel{display: block;overflow: hidden;position: relative;border: 1px solid #e7e7e7; }
+body.goyeer .panel .panel-title{display: block;overflow: hidden;background-color: #F0F5F8;}
+body.goyeer .panel .panel-title .t1{float:left;padding: 8px 5px;font-size: 14px;}
+body.goyeer .panel .panel-tbody{display: block;overflow: hidden;position: relative;}
+body.goyeer .panel .panel-tbody .loading{
+    position:  absolute;
+    overflow: hidden;
+    border: #ccc solid 1px;
+    background-color: rgba(255,255,255,0.4);
+    left: 50%;
+    top: 50%;
+    background-image: url('image/loading.gif');
+    background-position: 5px center;
+    background-repeat: no-repeat;
+    line-height: 40px;
+    padding-left: 45px;
+    padding-right: 25px;
+    font-size: 14px;
+    margin-top: -20px;
+    margin-left: -75px;
+}
+
+body.goyeer .panel .panel-tbody .loading1{
+   position:  absolute;
+   overflow: hidden;
+   background-color: rgba(255,255,255,0.4);
+   left: 50%;
+   top: 50%;
+   background-image: url('image/loading.gif');
+   background-position: center center;
+   background-repeat: no-repeat;
+   margin-top: -20px;
+   margin-left: -20px;
+   height: 40px;
+   width: 40px;
+}
+
+body.goyeer .panel .panel-tbody .table tbody{min-height: 1px;}
+body.goyeer .table thead td , body.goyeer .table thead th{
+    background-color: #f2f2f2  !important;
+    padding: 6px 3px;
+    font-size: 13px;
+    font-weight: 100;
+    color: #666;
+    
+}
+body.goyeer .material-scroll{height: 200px; display: block;overflow-y: auto;overflow-x: hidden;}
+body.goyeer .table{margin-bottom: 0px; border-left: 0px;border-right: 0px;}
+
+body.goyeer .table tbody td,
+body.goyeer .table tbody th{padding: 6px 3px;}
+
+body.goyeer .table tbody tr:hover > td{background-color: #ffffdf !important; opacity: 0.7;}
+body.goyeer .table tbody tr:nth-child(even) > td{background-color:#FAFAFA !important;}
+body.goyeer .table tbody tr td.linked a{font-size: 12px;color: #68be8d;cursor: pointer;text-decoration:underline;}
+
+body.goyeer .tbody-list{display: block;background-color: #ffffff !important;}
+body.goyeer .tbody-list dl,body.goyeer .tbody-list dl dd,body.goyeer .tbody-list dl dt{margin: 0px;padding: 0px;font-size: 13px !important;}
+body.goyeer .tbody-list dl{display: block;overflow: hidden;padding-left: 13px;border-bottom:solid 1px #f0f0f0; }
+body.goyeer .tbody-list dl:nth-child(even){background-color:#FAFAFA !important;}
+body.goyeer .tbody-list dl:hover{background-color:#ffffdf !important; opacity: 0.7;}
+body.goyeer .tbody-list dl dt{float: left;padding: 15px 4px;}
+body.goyeer .tbody-list dl dd{float: left;padding: 15px 2px;}
+body.goyeer .tbody-list figure{display: block;background-color: #ffffff;border-left: solid 1px #f0f0f0; text-align: center; }
+body.goyeer .tbody-list figure.bg01{background: center center no-repeat; background-size: 150px 150px;}
+body.goyeer .tbody-list .border-top{border-top: solid 1px #f0f0f0;}
+body.goyeer .tbody-list .border-bottom{border-bottom: solid 1px #f0f0f0;}
+body.goyeer .tbody-list .border-left{border-left: solid 1px #f0f0f0; }
+
+body.goyeer .no-record{line-height: 35px;color: #d4dcd6;text-align: center;}
+body.goyeer .text-center{text-align: center;}
+body.goyeer figure{position: relative;}
+body.goyeer figure span{
+                        display: block;
+                        overflow: hidden;
+                        border: 1px solid #dddddd; 
+                        text-align: center;
+                      }
+body.goyeer figure img{width: 100%;}
+
+body.goyeer figure .btn-linke{
+             position: absolute;
+                  top: 50%;
+                 left: 50%;
+                width: 160px;
+               height: 160px;
+               margin-top: -80px;
+               margin-left: -80px;
+               background-repeat: no-repeat;
+               background-position: center;
+               background-size: 160px;
+               cursor: pointer;
+               
+            }
+body.goyeer figure .btn-linke.icon-design{
+  background-image: url('image/icon-design.png');
+}
+
+body.goyeer figure .btn-linke.none-design{
+  background-image: url('image/icon-none.png');
+  cursor: move;
+} 
+
+body.goyeer figure .btn-linke.none-quality{
+  background-image: url('image/icon-none-quality.png');
+  cursor: move;
+}
+
+body.goyeer figure .btn-linke.none-shipment{
+  background-image: url('image/icon-none-shipment.png');
+  cursor: move;
+}
+
+body.goyeer select{
+    font-size: 12px;
+    line-height: 25px;
+    padding: 3px 8px;
+    border-radius: 4px;
+}
+
+body.goyeer input{line-height: 25px;border-radius: 4px;}
+body.goyeer select option{font-size: 12px;}
+body.goyeer button.default{padding: 5px 15px; font-size: 12px;cursor: pointer;}

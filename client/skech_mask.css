@@ -1,0 +1,17 @@
+html,body {height:100%; margin:10px; font-size:12px;}
+/*阴影*/
+.divShadow{
+	position:relative;		background:#006633;		margin:10px auto;		text-align: center;
+	line-height: 20px;		font-size: 12px;		font-weight: bold;		z-index:2;
+	width: 650px;			height: 100px;			left:40%;				top: 30%;
+	margin-left:-150px!important;
+	margin-top:-60px!important;
+	margin-top:0px;
+	position:absolute;
+	}
+
+#divPageMask{
+	background-color:#000000;position: absolute;z-index:100;width: 100%;height: 100%;top: 0;left: 0;min-height:100%;z-index:1;filter:alpha(opacity=30);-moz-opacity: 0.6;opacity: 0.6;
+	}
+
+.divInfo{background:#FFFFE6;border:1px solid #555;padding:10px 5px;position:relative;top:-5px;left:-5px;}  

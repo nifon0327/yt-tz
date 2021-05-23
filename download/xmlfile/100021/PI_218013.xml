@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PI>
+  <Product>
+    <Ln.>1</Ln.>
+    <PO>hetest</PO>
+    <ProductCode>wolfhetest</ProductCode>
+    <UnitPrice>3000.000</UnitPrice>
+    <Qty>1</Qty>
+    <Amount>3000.00</Amount>
+    <Leadtime>Week 13</Leadtime>
+  </Product>
+</PI>

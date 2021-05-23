@@ -1,0 +1,23 @@
+@charset "UTF-8";
+BODY {
+	margin-top: 8px;margin-left: 8px;BACKGROUND-POSITION: center 50%;FONT-FAMILY: "思源黑体";FONT-SIZE: 12px;COLOR: #333333;background-color: #F5F5F5;
+	SCROLLBAR-3DLIGHT-COLOR: #FFFFFF;SCROLLBAR-DARKSHADOW-COLOR: #FFFFFF;SCROLLBAR-TRACK-COLOR: #FFFFFF;
+	
+	SCROLLBAR-HIGHLIGHT-COLOR: #308BAD;
+	SCROLLBAR-SHADOW-COLOR: #308BAD;
+	SCROLLBAR-ARROW-COLOR: #308BAD;
+	SCROLLBAR-FACE-COLOR: #9BCFE3;
+	}
+
+TD{FONT-FAMILY: "思源黑体";FONT-SIZE: 12px;border: none #308BAD;}
+.{BORDER-BOTTOM: 1px solid;BORDER-top: 1px solid;background-color: #9BCFE3;}
+	
+.ModelLineColorSet{   
+    border-left: 0px;border-right: 0px;border-bottom: 0px;
+    border-top: 1px solid #308BAD;}
+.{background-color: #9BCFE3;}
+.clWinHead {
+	FONT-WEIGHT: normal;FONT-SIZE: 11px;WIDTH: 250px;COLOR: #333333;TOP: 0px;HEIGHT: 14px;
+	border: 1px none #308BAD;
+	BACKGROUND-COLOR: #9BCFE3;
+	}

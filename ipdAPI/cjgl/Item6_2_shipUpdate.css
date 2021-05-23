@@ -1,0 +1,21 @@
+.inputStyle
+{
+	height: 20px;
+	font-size: 16px;
+	text-align: center;
+}
+
+.listStyle
+{
+	
+}
+
+#headTable tr
+{
+	height: 40px;
+}
+
+#OrderList
+{
+	border-collapse:collapse;
+}

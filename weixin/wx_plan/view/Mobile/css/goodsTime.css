@@ -1,0 +1,56 @@
+.bar{
+	position: relative;
+	text-align: center;
+	font-weight: bold;
+}
+span#address{
+	margin-left: 50px;
+}
+.bar>span{
+	position: absolute;
+	left: 20px;
+	font-weight: normal;
+}
+.select-box>select{
+	width: 30%;
+}
+.table-box td{
+	text-align: center;
+}
+.btn-box{
+	text-align: center;
+}
+.model-contain{
+	margin: 40% auto;
+	padding: 5%;
+	width: 80%;
+	background-color: #fff;
+}
+.button-box{
+	text-align: center;
+}
+.btn-box button{
+	width: 40%;
+}
+.btn-box-small button{
+	width: 30%;
+}
+#pagination {
+	text-align: center;
+}
+.sui-pagnination .sui-pagination-btn {
+    width: 90px;
+    height: 55px;
+    font-size: 35px;
+}
+.sui-pagnination .sui-pagination__jump input {
+    width: 70px;
+    height: 55px;
+}
+.s-icon-triangle-left:before,
+.s-icon-triangle-right:before {
+    font-size: 40px;
+}
+.sui-pagnination .sui-pagination__jump input {
+    font-size: 35px;
+}

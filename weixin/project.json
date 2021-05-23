@@ -1,0 +1,4 @@
+{
+    "commonUrl": "/function/Controller/CommonController.php",
+    "batchstoreUrl": "/function/Controller/ProductFinishedStorageController.php"
+}
